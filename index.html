@@ -1,0 +1,1447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Draftora — Your career story, expertly written.</title>
+
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Professionally crafted resumes, CVs, and cover letters that open doors. Designed by career writers who understand what recruiters actually read. 48h turnaround, ATS-optimised."/>
+  <meta name="keywords" content="resume writing, CV writing, cover letter, career documents, professional resume, ATS optimised, LinkedIn profile, career writer"/>
+  <meta name="author" content="Draftora"/>
+  <meta name="robots" content="index, follow"/>
+  <link rel="canonical" href="https://draftora.shop/"/>
+
+  <!-- Open Graph / Social -->
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="https://draftora.shop/"/>
+  <meta property="og:title" content="Draftora — Your career story, expertly written."/>
+  <meta property="og:description" content="Professionally crafted resumes, CVs, and cover letters that open doors. 23 ATS-optimised templates. Free resume builder, now live."/>
+  <meta property="og:image" content="https://draftora.shop/og-image.png"/>
+  <meta property="og:site_name" content="Draftora"/>
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:url" content="https://draftora.shop/"/>
+  <meta name="twitter:title" content="Draftora — Your career story, expertly written."/>
+  <meta name="twitter:description" content="Professionally crafted resumes, CVs, and cover letters that open doors. 48h turnaround, ATS-optimised."/>
+  <meta name="twitter:image" content="https://draftora.shop/og-image.png"/>
+
+  <!-- Favicon (inline SVG) -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='4' fill='%230d0c0b'/%3E%3Ctext x='16' y='23' font-family='Georgia,serif' font-size='18' font-weight='700' text-anchor='middle' fill='%23f7f3ec'%3ED%3C/text%3E%3Ccircle cx='24' cy='8' r='4' fill='%23c9933a'/%3E%3C/svg%3E"/>
+  <link rel="apple-touch-icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='4' fill='%230d0c0b'/%3E%3Ctext x='16' y='23' font-family='Georgia,serif' font-size='18' font-weight='700' text-anchor='middle' fill='%23f7f3ec'%3ED%3C/text%3E%3Ccircle cx='24' cy='8' r='4' fill='%23c9933a'/%3E%3C/svg%3E"/>
+
+  <!-- Theme Color -->
+  <meta name="theme-color" content="#0d0c0b"/>
+  <meta name="format-detection" content="telephone=no"/>
+
+  <!-- Performance: preconnect fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+
+  <!-- Structured Data (JSON-LD) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "Draftora",
+    "description": "Professional resume, CV, and cover letter writing service. ATS-optimised, 48h turnaround.",
+    "url": "https://draftora.shop",
+    "email": "support@draftora.shop",
+    "areaServed": "Worldwide",
+    "serviceType": ["Resume Writing", "CV Writing", "Cover Letter Writing", "LinkedIn Profile Writing"]
+  }
+  </script>
+  <!-- Production CSS (replaces CDN Tailwind with only used utilities) -->
+  <style>
+    /* ── Reset & Base ── */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body { background:#0d0c0b; color:#f7f3ec; font-family:'DM Sans',system-ui,sans-serif; font-weight:300; }
+    .font-serif { font-family:'Playfair Display',Georgia,serif; }
+    input,textarea,button { font-family:'DM Sans',sans-serif; }
+    a { color: inherit; }
+    img { max-width: 100%; }
+    ::-webkit-scrollbar { width:6px; }
+    ::-webkit-scrollbar-track { background:#0d0c0b; }
+    ::-webkit-scrollbar-thumb { background:#c9933a; border-radius:3px; }
+
+    /* ── Tailwind Utility Replacements (only what's used) ── */
+    .fixed { position: fixed; }
+    .top-0 { top: 0; }
+    .left-0 { left: 0; }
+    .right-0 { right: 0; }
+    .z-50 { z-index: 50; }
+    .flex { display: flex; }
+    .flex-col { flex-direction: column; }
+    .items-center { align-items: center; }
+    .justify-between { justify-content: space-between; }
+    .justify-center { justify-content: center; }
+    .gap-8 { gap: 2rem; }
+    .gap-\[5px\] { gap: 5px; }
+    .p-1\.5 { padding: 0.375rem; }
+    .px-\[5vw\] { padding-left: 5vw; padding-right: 5vw; }
+    .py-4 { padding-top: 1rem; padding-bottom: 1rem; }
+    .border-b { border-bottom-width: 1px; border-bottom-style: solid; }
+    .text-2xl { font-size: 1.5rem; line-height: 2rem; }
+    .font-bold { font-weight: 700; }
+    .tracking-tight { letter-spacing: -0.025em; }
+
+    /* ── Landing styles ── */
+    @keyframes fadeUp { from{opacity:0;transform:translateY(24px)} to{opacity:1;transform:translateY(0)} }
+    .animate-fade-up { animation:fadeUp 0.8s ease both; }
+    .delay-100{animation-delay:.1s} .delay-200{animation-delay:.2s} .delay-300{animation-delay:.3s}
+    .pillar-card { border:1px solid rgba(201,147,58,0.2); border-top:2px solid #c9933a; }
+    .template-overlay {
+      position:absolute; inset:0; background:rgba(10,9,8,0.8); backdrop-filter:blur(4px);
+      display:flex; align-items:center; justify-content:center; opacity:0; transition:opacity .2s; cursor:pointer;
+    }
+    .template-card:hover .template-overlay { opacity:1; }
+    /* On touch devices show overlay always at low opacity so users know cards are tappable */
+    @media (hover: none) {
+      .template-overlay { opacity:0.92; background:rgba(10,9,8,0.55); }
+    }
+    .template-card:hover { border-color:#c9933a !important; transform:translateY(-4px); }
+    .template-card { transition:border-color .2s,transform .2s; }
+    .navbar { backdrop-filter:blur(12px); -webkit-backdrop-filter:blur(12px); }
+    .waitlist-input:focus { outline:none; border-color:#c9933a; }
+    #mobile-menu { display:none; }
+    #mobile-menu.open { display:flex; }
+    .ham-line { display:block; width:24px; height:2px; background:#f7f3ec; border-radius:2px; transition:all .25s; }
+    .ham-open .line1{transform:translateY(7px) rotate(45deg)}
+    .ham-open .line2{opacity:0;transform:scaleX(0)}
+    .ham-open .line3{transform:translateY(-7px) rotate(-45deg)}
+    /* Fix #5: Hide desktop nav in CSS for mobile to prevent JS-load flash */
+    @media (max-width: 767px) {
+      #desktop-nav { display:none; }
+      #ham-btn { display:flex !important; }
+    }
+    .filter-btn.active { border-color:#c9933a !important; color:#e8b86d !important; background:rgba(201,147,58,0.07) !important; }
+    .hero-h1 { font-size:clamp(2.2rem,7vw,5.5rem); }
+    .hero-p  { font-size:clamp(1rem,4vw,1.2rem); }
+
+    /* Fix #6: Scope touch targets to interactive controls, not all anchors */
+    @media (max-width: 1023px) {
+      button { min-height: 44px; }
+      nav a, .cta-link { min-height: 44px; display: inline-flex; align-items: center; }
+    }
+    /* Small utility buttons always need a decent hit area on all screens */
+    .add-btn  { min-height: 32px; min-width: 32px; }
+    .remove-btn { min-height: 32px; min-width: 32px; }
+    /* ── Mobile: Landing page ── */
+    @media (max-width: 640px) {
+      /* Stats bar */
+      #stats { gap:16px; justify-content:center; flex-wrap:wrap; }
+
+      /* Hero/CTA waitlist — stack vertically */
+      #waitlist-hero > div:first-child,
+      #waitlist-cta  > div:first-child { flex-direction:column; }
+      #hero-email, #cta-email { min-width:0 !important; width:100% !important; }
+      #waitlist-hero button, #waitlist-cta button { width:100%; justify-content:center; }
+
+      /* Filter buttons — scrollable row instead of wrap */
+      #filters { flex-wrap:nowrap; overflow-x:auto; padding-bottom:8px; -webkit-overflow-scrolling:touch; scrollbar-width:none; }
+      #filters::-webkit-scrollbar { display:none; }
+      .filter-btn { flex-shrink:0; }
+      /* Fix #7: Visual fade hint to indicate horizontal scroll */
+      #filters-wrap { position:relative; }
+      #filters-wrap::after { content:''; position:absolute; top:0; right:0; height:100%; width:40px; background:linear-gradient(to right, transparent, #0d0c0b); pointer-events:none; }
+
+      /* Footer stack */
+      footer { flex-direction:column; text-align:center; }
+    }
+
+    /* ── Mobile: Editor ── */
+    @media (max-width: 1023px) {
+      /* Editor header — tighter on mobile */
+      #ed-download-btn span { display:none; }
+      #ed-template-label { display:none; }
+      #ed-download-btn { padding:10px 14px !important; }
+
+      /* Fix #4: Use 100dvh for iOS Safari dynamic viewport height */
+      #ed-editor-panel, #ed-preview-panel {
+        max-height: calc(100dvh - 110px) !important;
+        max-height: calc(100vh - 110px) !important; /* fallback */
+      }
+
+      /* Collapse 2-col grids inside editor to single column on small screens */
+      .ed-grid-2 { grid-template-columns: 1fr !important; }
+    }
+
+    /* ── All screen sizes: touch-friendly tap targets for editor ── */
+
+
+    /* ── Editor styles ── */
+    #editor-view { display:none; }
+    .ed-input, .ed-textarea {
+      background:rgba(247,243,236,0.06); border:1px solid rgba(201,147,58,0.3);
+      border-radius:4px; color:#f7f3ec; padding:10px 14px; width:100%;
+      font-size:.875rem; outline:none; transition:border-color .2s;
+    }
+    .ed-input::placeholder,.ed-textarea::placeholder { color:rgba(247,243,236,0.35); }
+    .ed-input:focus,.ed-textarea:focus { border-color:#c9933a; }
+    .ed-textarea { resize:none; }
+    .section-label { font-size:.75rem; font-weight:600; letter-spacing:.12em; text-transform:uppercase; color:#c9933a; margin-bottom:12px; display:block; }
+    .exp-block { background:rgba(247,243,236,0.02); border:1px solid rgba(201,147,58,0.18); border-radius:4px; padding:16px; margin-bottom:12px; }
+    .add-btn { font-size:.75rem; color:#e8b86d; background:none; border:none; cursor:pointer; display:flex; align-items:center; gap:4px; padding:0; }
+    .add-btn:hover { color:#c9933a; }
+    .remove-btn { background:none; border:none; cursor:pointer; color:rgba(247,243,236,0.4); padding:0; }
+    .remove-btn:hover { color:#ef4444; }
+    .etab-btn { flex:1; display:flex; align-items:center; justify-content:center; gap:8px; padding:12px; font-size:.875rem; font-weight:500; background:none; border:none; cursor:pointer; color:rgba(247,243,236,0.6); border-bottom:2px solid transparent; transition:all .2s; }
+    .etab-btn.active { color:#e8b86d; border-bottom-color:#c9933a; }
+
+    /* ── Focus Visible Accessibility ── */
+    :focus-visible { outline: 2px solid #c9933a; outline-offset: 2px; }
+    button:focus-visible, a:focus-visible { outline: 2px solid #c9933a; outline-offset: 3px; border-radius: 2px; }
+
+    /* ── Reduced Motion ── */
+    @media (prefers-reduced-motion: reduce) {
+      .animate-fade-up { animation: none; }
+      * { transition-duration: 0.01ms !important; }
+    }
+
+    /* ── Terms & Privacy Modals (shared) ── */
+    .legal-modal {
+      display:none; position:fixed; inset:0; z-index:200;
+      background:rgba(5,4,4,0.85); backdrop-filter:blur(8px); -webkit-backdrop-filter:blur(8px);
+      align-items:center; justify-content:center; padding:20px;
+    }
+    .legal-modal.open { display:flex; }
+    .legal-modal-box {
+      background:#161412; border:1px solid rgba(201,147,58,0.25); border-radius:8px;
+      width:100%; max-width:720px; max-height:88vh; display:flex; flex-direction:column;
+      box-shadow:0 24px 80px rgba(0,0,0,0.7);
+    }
+    .legal-modal-header {
+      padding:24px 28px 20px; border-bottom:1px solid rgba(201,147,58,0.18);
+      display:flex; align-items:center; justify-content:space-between; flex-shrink:0;
+    }
+    .legal-modal-body {
+      overflow-y:auto; padding:28px; flex:1;
+      font-size:.875rem; line-height:1.75; color:rgba(247,243,236,0.72); font-weight:300;
+    }
+    .legal-modal-body h2 {
+      font-family:'Playfair Display',Georgia,serif; font-size:1rem; font-weight:600;
+      color:#f7f3ec; margin:28px 0 8px; letter-spacing:-.01em;
+    }
+    .legal-modal-body h2:first-child { margin-top:0; }
+    .legal-modal-body p { margin-bottom:12px; }
+    .legal-modal-body ul { margin:0 0 12px 20px; }
+    .legal-modal-body ul li { margin-bottom:6px; }
+    .legal-modal-body a { color:#c9933a; text-decoration:none; }
+    .legal-modal-body a:hover { color:#e8b86d; }
+    .legal-modal-footer {
+      padding:16px 28px; border-top:1px solid rgba(201,147,58,0.18);
+      display:flex; justify-content:flex-end; flex-shrink:0;
+    }
+    .legal-close-btn {
+      background:#c9933a; color:#0d0c0b; border:none; border-radius:4px;
+      padding:10px 24px; font-size:.875rem; font-weight:600; cursor:pointer;
+      letter-spacing:.05em; text-transform:uppercase;
+    }
+    .legal-close-btn:hover { background:#e8b86d; }
+
+    /* ── Privacy Policy Modal ── */
+    #privacy-modal {
+      display:none; position:fixed; inset:0; z-index:200;
+      background:rgba(5,4,4,0.85); backdrop-filter:blur(8px); -webkit-backdrop-filter:blur(8px);
+      align-items:center; justify-content:center; padding:20px;
+    }
+    #privacy-modal.open { display:flex; }
+    #privacy-modal-box {
+      background:#161412; border:1px solid rgba(201,147,58,0.25); border-radius:8px;
+      width:100%; max-width:720px; max-height:88vh; display:flex; flex-direction:column;
+      box-shadow:0 24px 80px rgba(0,0,0,0.7);
+    }
+    #privacy-modal-header {
+      padding:24px 28px 20px; border-bottom:1px solid rgba(201,147,58,0.18);
+      display:flex; align-items:center; justify-content:space-between; flex-shrink:0;
+    }
+    #privacy-modal-body {
+      overflow-y:auto; padding:28px; flex:1;
+      font-size:.875rem; line-height:1.75; color:rgba(247,243,236,0.72); font-weight:300;
+    }
+    #privacy-modal-body h2 {
+      font-family:'Playfair Display',Georgia,serif; font-size:1rem; font-weight:600;
+      color:#f7f3ec; margin:28px 0 8px; letter-spacing:-.01em;
+    }
+    #privacy-modal-body h2:first-child { margin-top:0; }
+    #privacy-modal-body p { margin-bottom:12px; }
+    #privacy-modal-body ul { margin:0 0 12px 20px; }
+    #privacy-modal-body ul li { margin-bottom:6px; }
+    #privacy-modal-body a { color:#c9933a; text-decoration:none; }
+    #privacy-modal-body a:hover { color:#e8b86d; }
+    #privacy-modal-footer {
+      padding:16px 28px; border-top:1px solid rgba(201,147,58,0.18);
+      display:flex; justify-content:flex-end; flex-shrink:0;
+    }
+    .privacy-close-btn {
+      background:#c9933a; color:#0d0c0b; border:none; border-radius:4px;
+      padding:10px 24px; font-size:.875rem; font-weight:600; cursor:pointer;
+      letter-spacing:.05em; text-transform:uppercase;
+    }
+    .privacy-close-btn:hover { background:#e8b86d; }
+
+    /* ── Pricing Section ── */
+    .pricing-card { border:1px solid rgba(201,147,58,0.18);border-radius:8px;padding:32px;background:rgba(247,243,236,0.02);transition:border-color .2s,transform .2s; }
+    .pricing-card:hover { border-color:#c9933a;transform:translateY(-4px); }
+    .pricing-card.featured { border-color:#c9933a;background:rgba(201,147,58,0.05);position:relative; }
+    .pricing-badge { position:absolute;top:-12px;left:50%;transform:translateX(-50%);background:#c9933a;color:#0d0c0b;font-size:.65rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:4px 14px;border-radius:999px;white-space:nowrap; }
+
+    /* ── Booking Modal ── */
+    #booking-modal { display:none;position:fixed;inset:0;z-index:300;background:rgba(5,4,4,0.9);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);align-items:center;justify-content:center;padding:20px; }
+    #booking-modal.open { display:flex; }
+    #booking-modal-box { background:#161412;border:1px solid rgba(201,147,58,0.25);border-radius:8px;width:100%;max-width:520px;max-height:90vh;display:flex;flex-direction:column;box-shadow:0 24px 80px rgba(0,0,0,0.7); }
+    #booking-modal-header { padding:24px 28px 20px;border-bottom:1px solid rgba(201,147,58,0.18);display:flex;align-items:center;justify-content:space-between;flex-shrink:0; }
+    #booking-modal-body { overflow-y:auto;padding:28px;flex:1; }
+    #booking-modal-footer { padding:16px 28px;border-top:1px solid rgba(201,147,58,0.18);display:flex;justify-content:flex-end;gap:12px;flex-shrink:0; }
+    .booking-input { background:rgba(247,243,236,0.06);border:1px solid rgba(201,147,58,0.3);border-radius:4px;color:#f7f3ec;padding:12px 16px;width:100%;font-size:.875rem;outline:none;transition:border-color .2s;font-family:'DM Sans',sans-serif; }
+    .booking-input:focus { border-color:#c9933a; }
+    .booking-input::placeholder { color:rgba(247,243,236,0.35); }
+
+    @media print {
+      body { background:white !important; }
+      .no-print { display:none !important; }
+      #landing-view { display:none !important; }
+      #editor-view { display:block !important; }
+      #ed-editor-panel { display:none !important; }
+      #ed-preview-panel { display:block !important; height:auto !important; max-height:none !important; overflow:visible !important; }
+      #ed-resume-preview { box-shadow:none; max-width:100%; }
+    }
+  </style>
+  <!-- PDF export library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+</head>
+<body>
+<noscript><style>#landing-view{display:block!important;}#editor-view{display:none!important;}</style><div style="background:#c9933a;color:#0d0c0b;text-align:center;padding:10px;font-size:.875rem;font-weight:600;">JavaScript is required for the resume editor. The landing page works without it.</div></noscript>
+
+<!-- ═══════════════════════════════ LANDING VIEW ═══════════════════════════════ -->
+<div id="landing-view">
+
+<!-- NAVBAR -->
+<nav class="navbar fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-[5vw] py-4 border-b" style="background:rgba(13,12,11,0.95);border-color:rgba(201,147,58,0.18);">
+  <div class="font-serif text-2xl font-bold tracking-tight" style="color:#f7f3ec;">Draft<span style="color:#c9933a;">ora</span></div>
+  <button id="ham-btn" onclick="toggleMenu()" class="flex flex-col justify-center gap-[5px] p-1.5" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobile-menu" style="background:none;border:none;cursor:pointer;display:none;">
+    <span class="ham-line line1"></span><span class="ham-line line2"></span><span class="ham-line line3"></span>
+  </button>
+  <div id="desktop-nav" class="flex items-center gap-8">
+    <a href="#services" style="font-size:.75rem;font-weight:500;color:rgba(247,243,236,0.6);text-transform:uppercase;letter-spacing:.1em;text-decoration:none;" onmouseover="this.style.color='#e8b86d'" onmouseout="this.style.color='rgba(247,243,236,0.6)'">Services</a>
+    <a href="#pricing"  style="font-size:.75rem;font-weight:500;color:rgba(247,243,236,0.6);text-transform:uppercase;letter-spacing:.1em;text-decoration:none;" onmouseover="this.style.color='#e8b86d'" onmouseout="this.style.color='rgba(247,243,236,0.6)'">Pricing</a>
+    <a href="#process"  style="font-size:.75rem;font-weight:500;color:rgba(247,243,236,0.6);text-transform:uppercase;letter-spacing:.1em;text-decoration:none;" onmouseover="this.style.color='#e8b86d'" onmouseout="this.style.color='rgba(247,243,236,0.6)'">Process</a>
+    <a href="#why"      style="font-size:.75rem;font-weight:500;color:rgba(247,243,236,0.6);text-transform:uppercase;letter-spacing:.1em;text-decoration:none;" onmouseover="this.style.color='#e8b86d'" onmouseout="this.style.color='rgba(247,243,236,0.6)'">Why Us</a>
+    <a href="#templates" style="font-size:.75rem;font-weight:500;color:rgba(247,243,236,0.6);text-transform:uppercase;letter-spacing:.1em;text-decoration:none;" onmouseover="this.style.color='#e8b86d'" onmouseout="this.style.color='rgba(247,243,236,0.6)'">Templates</a>
+    <a href="#pricing" style="background:#c9933a;color:#0d0c0b;padding:8px 20px;border-radius:4px;font-size:.75rem;font-weight:600;text-transform:uppercase;letter-spacing:.1em;text-decoration:none;" onmouseover="this.style.background='#e8b86d'" onmouseout="this.style.background='#c9933a'">Get Started</a>
+  </div>
+  <div id="mobile-menu" style="position:fixed;top:64px;left:0;right:0;background:rgba(13,12,11,0.98);border-bottom:1px solid rgba(201,147,58,0.18);flex-direction:column;backdrop-filter:blur(16px);">
+    <a href="#services" onclick="closeMenu()" style="padding:16px 6vw;font-size:.875rem;font-weight:500;color:rgba(247,243,236,0.6);text-transform:uppercase;letter-spacing:.1em;text-decoration:none;border-bottom:1px solid rgba(201,147,58,0.18);display:block;">Services</a>
+    <a href="#pricing"  onclick="closeMenu()" style="padding:16px 6vw;font-size:.875rem;font-weight:500;color:rgba(247,243,236,0.6);text-transform:uppercase;letter-spacing:.1em;text-decoration:none;border-bottom:1px solid rgba(201,147,58,0.18);display:block;">Pricing</a>
+    <a href="#process"  onclick="closeMenu()" style="padding:16px 6vw;font-size:.875rem;font-weight:500;color:rgba(247,243,236,0.6);text-transform:uppercase;letter-spacing:.1em;text-decoration:none;border-bottom:1px solid rgba(201,147,58,0.18);display:block;">Process</a>
+    <a href="#why"      onclick="closeMenu()" style="padding:16px 6vw;font-size:.875rem;font-weight:500;color:rgba(247,243,236,0.6);text-transform:uppercase;letter-spacing:.1em;text-decoration:none;border-bottom:1px solid rgba(201,147,58,0.18);display:block;">Why Us</a>
+    <a href="#templates" onclick="closeMenu()" style="padding:16px 6vw;font-size:.875rem;font-weight:500;color:rgba(247,243,236,0.6);text-transform:uppercase;letter-spacing:.1em;text-decoration:none;border-bottom:1px solid rgba(201,147,58,0.18);display:block;">Templates</a>
+    <div style="padding:16px 6vw;"><a href="#pricing" onclick="closeMenu()" style="display:block;text-align:center;background:#c9933a;color:#0d0c0b;padding:12px 20px;border-radius:4px;font-size:.875rem;font-weight:600;text-transform:uppercase;letter-spacing:.1em;text-decoration:none;">Get Started</a></div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section id="hero" style="min-height:100vh;display:flex;flex-direction:column;justify-content:center;padding:128px 5vw 96px;position:relative;overflow:hidden;">
+  <div style="position:absolute;inset:0;pointer-events:none;background:radial-gradient(ellipse 60% 60% at 70% 40%,rgba(201,147,58,0.07) 0%,transparent 70%),radial-gradient(ellipse 40% 40% at 20% 80%,rgba(201,147,58,0.04) 0%,transparent 60%);"></div>
+  <div style="position:relative;">
+    <div class="animate-fade-up" style="display:flex;align-items:center;gap:8px;font-size:.75rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:#c9933a;margin-bottom:24px;">
+      <span style="display:inline-block;width:24px;height:1px;background:#c9933a;"></span>Now Accepting Early Members
+    </div>
+    <h1 class="font-serif hero-h1 animate-fade-up delay-100" style="font-weight:700;line-height:1.08;letter-spacing:-.02em;max-width:900px;margin-bottom:24px;">
+      Your career story,<br/><em style="color:#e8b86d;">expertly written.</em>
+    </h1>
+    <p class="hero-p animate-fade-up delay-200" style="color:rgba(247,243,236,0.65);font-weight:300;max-width:560px;margin-bottom:40px;">
+      Professionally crafted resumes, CVs, and cover letters that open doors. Designed by career writers who understand what recruiters actually read.
+    </p>
+    <div class="animate-fade-up delay-300">
+      <div style="display:flex;gap:16px;flex-wrap:wrap;align-items:center;margin-bottom:16px;">
+        <button onclick="document.getElementById('pricing').scrollIntoView({behavior:'smooth'})" style="padding:16px 36px;background:#c9933a;color:#0d0c0b;border:none;border-radius:4px;font-weight:700;font-size:.875rem;text-transform:uppercase;letter-spacing:.1em;cursor:pointer;" onmouseover="this.style.background='#e8b86d'" onmouseout="this.style.background='#c9933a'">See Pricing</button>
+        <button onclick="document.getElementById('templates').scrollIntoView({behavior:'smooth'})" style="padding:16px 36px;background:none;color:rgba(247,243,236,0.8);border:1px solid rgba(201,147,58,0.4);border-radius:4px;font-weight:600;font-size:.875rem;text-transform:uppercase;letter-spacing:.1em;cursor:pointer;" onmouseover="this.style.borderColor='#c9933a';this.style.color='#e8b86d'" onmouseout="this.style.borderColor='rgba(201,147,58,0.4)';this.style.color='rgba(247,243,236,0.8)'">Browse Templates</button>
+      </div>
+      <p style="font-size:.75rem;color:rgba(247,243,236,0.35);letter-spacing:.05em;">24h turnaround · Revisions included · Early member pricing</p>
+    </div>
+  </div>
+</section>
+
+<!-- STATS -->
+<div id="stats" style="display:flex;gap:48px;flex-wrap:wrap;align-items:center;padding:40px 5vw;border-top:1px solid rgba(201,147,58,0.18);border-bottom:1px solid rgba(201,147,58,0.18);">
+  <div style="display:flex;align-items:baseline;gap:8px;"><span class="font-serif" style="font-size:1.875rem;font-weight:600;color:#e8b86d;">23</span><span style="font-size:.75rem;color:rgba(247,243,236,0.5);text-transform:uppercase;letter-spacing:.1em;">Professional templates</span></div>
+  <div style="display:flex;align-items:baseline;gap:8px;"><span class="font-serif" style="font-size:1.875rem;font-weight:600;color:#e8b86d;">24h</span><span style="font-size:.75rem;color:rgba(247,243,236,0.5);text-transform:uppercase;letter-spacing:.1em;">Turnaround on all services</span></div>
+  <div style="display:flex;align-items:baseline;gap:8px;"><span class="font-serif" style="font-size:1.875rem;font-weight:600;color:#e8b86d;">5</span><span style="font-size:.75rem;color:rgba(247,243,236,0.5);text-transform:uppercase;letter-spacing:.1em;">Career document types</span></div>
+  <div style="display:flex;align-items:baseline;gap:8px;"><span class="font-serif" style="font-size:1.875rem;font-weight:600;color:#e8b86d;">100%</span><span style="font-size:.75rem;color:rgba(247,243,236,0.5);text-transform:uppercase;letter-spacing:.1em;">Free resume builder</span></div>
+</div>
+
+<!-- SERVICES -->
+<section id="services" style="padding:96px 5vw;background:rgba(247,243,236,0.025);">
+  <p style="font-size:.75rem;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:#c9933a;margin-bottom:12px;">What We Offer</p>
+  <h2 class="font-serif" style="font-size:clamp(1.875rem,4vw,2.25rem);font-weight:600;line-height:1.2;letter-spacing:-.02em;margin-bottom:8px;">Every document<br/>your career needs.</h2>
+  <p style="color:rgba(247,243,236,0.55);font-weight:300;max-width:512px;margin-bottom:48px;">From first job to C-suite, we cover the full spectrum of professional career documents.</p>
+  <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));border:1px solid rgba(201,147,58,0.18);">
+    <div style="padding:32px;border:1px solid rgba(201,147,58,0.18);transition:background .2s;" onmouseover="this.style.background='rgba(201,147,58,0.05)'" onmouseout="this.style.background=''"><div style="margin-bottom:20px;"><svg width="36" height="36" viewBox="0 0 36 36" fill="none" style="opacity:.8;"><rect x="6" y="4" width="24" height="28" rx="1" stroke="#c9933a" stroke-width="1.5"/><line x1="11" y1="11" x2="25" y2="11" stroke="#c9933a" stroke-width="1.2"/><line x1="11" y1="16" x2="25" y2="16" stroke="#c9933a" stroke-width="1.2"/><line x1="11" y1="21" x2="20" y2="21" stroke="#c9933a" stroke-width="1.2"/></svg></div><h3 class="font-serif" style="font-size:1.125rem;font-weight:600;color:#f7f3ec;margin-bottom:8px;">Resume Writing</h3><p style="font-size:.875rem;color:rgba(247,243,236,0.5);font-weight:300;line-height:1.6;margin-bottom:16px;">ATS-optimised, keyword-rich resumes tailored for your target role and industry.</p><span style="font-size:.7rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:#c9933a;">Most popular</span></div>
+    <div style="padding:32px;border:1px solid rgba(201,147,58,0.18);transition:background .2s;" onmouseover="this.style.background='rgba(201,147,58,0.05)'" onmouseout="this.style.background=''"><div style="margin-bottom:20px;"><svg width="36" height="36" viewBox="0 0 36 36" fill="none" style="opacity:.8;"><rect x="4" y="4" width="28" height="28" rx="1" stroke="#c9933a" stroke-width="1.5"/><line x1="9" y1="10" x2="27" y2="10" stroke="#c9933a" stroke-width="1.2"/><line x1="9" y1="15" x2="27" y2="15" stroke="#c9933a" stroke-width="1.2"/><line x1="9" y1="20" x2="27" y2="20" stroke="#c9933a" stroke-width="1.2"/><line x1="9" y1="25" x2="19" y2="25" stroke="#c9933a" stroke-width="1.2"/></svg></div><h3 class="font-serif" style="font-size:1.125rem;font-weight:600;color:#f7f3ec;margin-bottom:8px;">Curriculum Vitae</h3><p style="font-size:.875rem;color:rgba(247,243,236,0.5);font-weight:300;line-height:1.6;margin-bottom:16px;">Comprehensive CVs for academic, medical, research, and international roles.</p><span style="font-size:.7rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:#c9933a;">Academic &amp; research</span></div>
+    <div style="padding:32px;border:1px solid rgba(201,147,58,0.18);transition:background .2s;" onmouseover="this.style.background='rgba(201,147,58,0.05)'" onmouseout="this.style.background=''"><div style="margin-bottom:20px;"><svg width="36" height="36" viewBox="0 0 36 36" fill="none" style="opacity:.8;"><rect x="5" y="7" width="26" height="22" rx="1" stroke="#c9933a" stroke-width="1.5"/><polyline points="5,7 18,19 31,7" stroke="#c9933a" stroke-width="1.2" fill="none"/></svg></div><h3 class="font-serif" style="font-size:1.125rem;font-weight:600;color:#f7f3ec;margin-bottom:8px;">Cover Letters</h3><p style="font-size:.875rem;color:rgba(247,243,236,0.5);font-weight:300;line-height:1.6;margin-bottom:16px;">Compelling narratives that complement your resume and open conversations.</p><span style="font-size:.7rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:#c9933a;">Bespoke per role</span></div>
+    <div style="padding:32px;border:1px solid rgba(201,147,58,0.18);transition:background .2s;" onmouseover="this.style.background='rgba(201,147,58,0.05)'" onmouseout="this.style.background=''"><div style="margin-bottom:20px;"><svg width="36" height="36" viewBox="0 0 36 36" fill="none" style="opacity:.8;"><rect x="4" y="6" width="28" height="20" rx="2" stroke="#c9933a" stroke-width="1.5"/><circle cx="18" cy="16" r="4" stroke="#c9933a" stroke-width="1.2"/><line x1="8" y1="30" x2="28" y2="30" stroke="#c9933a" stroke-width="1.2"/></svg></div><h3 class="font-serif" style="font-size:1.125rem;font-weight:600;color:#f7f3ec;margin-bottom:8px;">LinkedIn Overhaul</h3><p style="font-size:.875rem;color:rgba(247,243,236,0.5);font-weight:300;line-height:1.6;margin-bottom:16px;">Profile rewrites that attract recruiters and grow your professional network.</p><span style="font-size:.7rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:#c9933a;">Profile + summary</span></div>
+    <div style="padding:32px;border:1px solid rgba(201,147,58,0.18);transition:background .2s;" onmouseover="this.style.background='rgba(201,147,58,0.05)'" onmouseout="this.style.background=''"><div style="margin-bottom:20px;"><svg width="36" height="36" viewBox="0 0 36 36" fill="none" style="opacity:.8;"><circle cx="13" cy="12" r="5" stroke="#c9933a" stroke-width="1.5"/><path d="M4 28c0-5 4-8 9-8h6c5 0 9 3 9 8" stroke="#c9933a" stroke-width="1.5" fill="none"/><line x1="22" y1="8" x2="32" y2="8" stroke="#c9933a" stroke-width="1.2"/><line x1="22" y1="12" x2="30" y2="12" stroke="#c9933a" stroke-width="1.2"/></svg></div><h3 class="font-serif" style="font-size:1.125rem;font-weight:600;color:#f7f3ec;margin-bottom:8px;">Bio Writing</h3><p style="font-size:.875rem;color:rgba(247,243,236,0.5);font-weight:300;line-height:1.6;margin-bottom:16px;">Executive bios, speaker profiles, and personal brand narratives for any platform.</p><span style="font-size:.7rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:#c9933a;">Personal branding</span></div>
+    <div style="padding:32px;border:1px solid rgba(201,147,58,0.18);transition:background .2s;" onmouseover="this.style.background='rgba(201,147,58,0.05)'" onmouseout="this.style.background=''"><div style="margin-bottom:20px;"><svg width="36" height="36" viewBox="0 0 36 36" fill="none" style="opacity:.8;"><circle cx="13" cy="12" r="5" stroke="#c9933a" stroke-width="1.5"/><path d="M4 28c0-5 4-8 9-8h6c5 0 9 3 9 8" stroke="#c9933a" stroke-width="1.5" fill="none"/><line x1="22" y1="8" x2="32" y2="8" stroke="#c9933a" stroke-width="1.2"/><line x1="22" y1="12" x2="30" y2="12" stroke="#c9933a" stroke-width="1.2"/></svg></div><h3 class="font-serif" style="font-size:1.125rem;font-weight:600;color:#f7f3ec;margin-bottom:8px;">Bio Writing</h3><p style="font-size:.875rem;color:rgba(247,243,236,0.5);font-weight:300;line-height:1.6;margin-bottom:16px;">Executive bios, speaker profiles, and personal brand narratives for any platform.</p><span style="font-size:.7rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:#c9933a;">Personal branding</span></div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section id="process" style="padding:96px 5vw;">
+  <p style="font-size:.75rem;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:#c9933a;margin-bottom:12px;">How It Works</p>
+  <h2 class="font-serif" style="font-size:clamp(1.875rem,4vw,2.25rem);font-weight:600;line-height:1.2;letter-spacing:-.02em;margin-bottom:8px;">From intake to inbox<br/>in three steps.</h2>
+  <p style="color:rgba(247,243,236,0.55);font-weight:300;max-width:512px;margin-bottom:48px;">A streamlined process designed so you spend zero time figuring it out.</p>
+  <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:48px;">
+    <div><div class="font-serif" style="font-size:3.75rem;font-weight:700;line-height:1;margin-bottom:16px;color:rgba(201,147,58,0.12);">01</div><h3 class="font-serif" style="font-size:1.25rem;font-weight:600;color:#f7f3ec;margin-bottom:8px;">Tell Us Your Story</h3><p style="font-size:.875rem;color:rgba(247,243,236,0.5);font-weight:300;">Complete a detailed intake form about your background, goals, and target roles. The more context, the sharper the result.</p></div>
+    <div><div class="font-serif" style="font-size:3.75rem;font-weight:700;line-height:1;margin-bottom:16px;color:rgba(201,147,58,0.12);">02</div><h3 class="font-serif" style="font-size:1.25rem;font-weight:600;color:#f7f3ec;margin-bottom:8px;">We Write &amp; Refine</h3><p style="font-size:.875rem;color:rgba(247,243,236,0.5);font-weight:300;">Your dedicated writer crafts every document from scratch. We handle positioning, language, and ATS formatting.</p></div>
+    <div><div class="font-serif" style="font-size:3.75rem;font-weight:700;line-height:1;margin-bottom:16px;color:rgba(201,147,58,0.12);">03</div><h3 class="font-serif" style="font-size:1.25rem;font-weight:600;color:#f7f3ec;margin-bottom:8px;">Receive &amp; Apply</h3><p style="font-size:.875rem;color:rgba(247,243,236,0.5);font-weight:300;">Delivered in 48 hours. Two rounds of revisions included. Use it with confidence.</p></div>
+  </div>
+</section>
+
+<!-- WHY -->
+<section id="why" style="padding:96px 5vw;background:#f7f3ec;color:#0d0c0b;">
+  <p style="font-size:.75rem;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:#c9933a;margin-bottom:12px;">Why Draftora</p>
+  <h2 class="font-serif" style="font-size:clamp(1.875rem,4vw,2.25rem);font-weight:600;line-height:1.2;letter-spacing:-.02em;color:#0d0c0b;margin-bottom:8px;">Not a template.<br/>Not a generator.</h2>
+  <p style="color:rgba(13,12,11,0.5);font-weight:300;max-width:512px;margin-bottom:48px;">Every document is written by a human career professional who has read thousands of resumes from both sides.</p>
+  <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:24px;">
+    <div class="pillar-card" style="padding:24px;background:white;"><h4 class="font-serif" style="font-size:1rem;font-weight:600;color:#0d0c0b;margin-bottom:8px;">Human expertise</h4><p style="font-size:.875rem;color:rgba(13,12,11,0.5);font-weight:300;line-height:1.6;">Our writers have backgrounds in HR, recruiting, and career coaching across every major industry.</p></div>
+    <div class="pillar-card" style="padding:24px;background:white;"><h4 class="font-serif" style="font-size:1rem;font-weight:600;color:#0d0c0b;margin-bottom:8px;">ATS-first approach</h4><p style="font-size:.875rem;color:rgba(13,12,11,0.5);font-weight:300;line-height:1.6;">Every document is tested against major applicant tracking systems before delivery.</p></div>
+    <div class="pillar-card" style="padding:24px;background:white;"><h4 class="font-serif" style="font-size:1rem;font-weight:600;color:#0d0c0b;margin-bottom:8px;">23 premium templates</h4><p style="font-size:.875rem;color:rgba(13,12,11,0.5);font-weight:300;line-height:1.6;">From minimal to bold, corporate to creative — templates built for every industry and career level.</p></div>
+    <div class="pillar-card" style="padding:24px;background:white;"><h4 class="font-serif" style="font-size:1rem;font-weight:600;color:#0d0c0b;margin-bottom:8px;">Revision guarantee</h4><p style="font-size:.875rem;color:rgba(13,12,11,0.5);font-weight:300;line-height:1.6;">Not satisfied? Revisions are included with every service. We don't rest until it's right.</p></div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section id="testimonials" style="padding:96px 5vw;">
+  <p style="font-size:.75rem;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:#c9933a;margin-bottom:12px;">Where We Are</p>
+  <h2 class="font-serif" style="font-size:clamp(1.875rem,4vw,2.25rem);font-weight:600;line-height:1.2;letter-spacing:-.02em;margin-bottom:16px;">Built in the open.<br/><em style="color:#e8b86d;">Launching now.</em></h2>
+  <p style="color:rgba(247,243,236,0.55);font-weight:300;max-width:560px;margin-bottom:56px;">Draftora is in early access. We're being honest — we're a new service, and we want our first members to help shape what this becomes.</p>
+  <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:24px;">
+    <div style="padding:32px;border:1px solid rgba(201,147,58,0.18);border-top:2px solid #c9933a;">
+      <div style="font-size:2rem;margin-bottom:16px;">✦</div>
+      <h3 class="font-serif" style="font-size:1.125rem;font-weight:600;color:#f7f3ec;margin-bottom:8px;">Free resume builder, right now</h3>
+      <p style="font-size:.875rem;color:rgba(247,243,236,0.55);font-weight:300;line-height:1.6;">The resume editor is fully live. Pick a template, fill in your details, download your PDF. No signup needed. No cost.</p>
+    </div>
+    <div style="padding:32px;border:1px solid rgba(201,147,58,0.18);border-top:2px solid #c9933a;">
+      <div style="font-size:2rem;margin-bottom:16px;">✦</div>
+      <h3 class="font-serif" style="font-size:1.125rem;font-weight:600;color:#f7f3ec;margin-bottom:8px;">Professional writing — now open</h3>
+      <p style="font-size:.875rem;color:rgba(247,243,236,0.55);font-weight:300;line-height:1.6;">Human-written resumes, CVs, and cover letters are available now. Book a meeting and we'll get started within 24 hours.</p>
+    </div>
+    <div style="padding:32px;border:1px solid rgba(201,147,58,0.18);border-top:2px solid #c9933a;">
+      <div style="font-size:2rem;margin-bottom:16px;">✦</div>
+      <h3 class="font-serif" style="font-size:1.125rem;font-weight:600;color:#f7f3ec;margin-bottom:8px;">Your feedback shapes this</h3>
+      <p style="font-size:.875rem;color:rgba(247,243,236,0.55);font-weight:300;line-height:1.6;">Early members get direct access to the founder. Tell us what's missing, what's broken, what you need. We're listening.</p>
+    </div>
+  </div>
+</section>
+
+<!-- PRICING -->
+<section id="pricing" style="padding:96px 5vw;border-top:1px solid rgba(201,147,58,0.18);">
+  <p style="font-size:.75rem;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:#c9933a;margin-bottom:12px;">Pricing</p>
+  <h2 class="font-serif" style="font-size:clamp(1.875rem,4vw,2.25rem);font-weight:600;line-height:1.2;letter-spacing:-.02em;margin-bottom:8px;">Simple, honest pricing.<br/><em style="color:#e8b86d;">No hidden fees.</em></h2>
+  <p style="color:rgba(247,243,236,0.55);font-weight:300;max-width:512px;margin-bottom:16px;">Schedule a meeting and we'll get started on your documents within 24 hours.</p>
+  <div style="display:inline-flex;align-items:center;gap:8px;background:rgba(201,147,58,0.1);border:1px solid rgba(201,147,58,0.3);border-radius:999px;padding:6px 16px;margin-bottom:56px;">
+    <span style="font-size:.7rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:#c9933a;">⚡ Discounted pricing for early members only — prices will increase soon</span>
+  </div>
+
+  <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:2px;background:rgba(201,147,58,0.1);border:1px solid rgba(201,147,58,0.18);border-radius:8px;overflow:hidden;">
+
+    <!-- Resume Writing -->
+    <div style="background:#0f0e0d;padding:36px 32px;display:flex;flex-direction:column;transition:background .2s;" onmouseover="this.style.background='#161210'" onmouseout="this.style.background='#0f0e0d'">
+      <div style="font-size:.65rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#c9933a;margin-bottom:20px;">24-HOUR DELIVERY</div>
+      <h3 class="font-serif" style="font-size:1.5rem;font-weight:700;color:#f7f3ec;margin-bottom:8px;">Resume Writing</h3>
+      <p style="font-size:.875rem;color:rgba(247,243,236,0.5);font-weight:300;margin-bottom:28px;line-height:1.6;">ATS-optimised, keyword-rich resume tailored for your target role and industry.</p>
+      <div style="margin-bottom:6px;"><span style="font-size:.85rem;color:rgba(247,243,236,0.3);text-decoration:line-through;">₹999</span></div>
+      <div style="margin-bottom:4px;"><span class="font-serif" style="font-size:2.5rem;font-weight:700;color:#e8b86d;line-height:1;">₹299</span></div>
+      <p style="font-size:.7rem;color:rgba(247,243,236,0.35);margin-bottom:28px;">one-time · revisions included</p>
+      <ul style="margin:0 0 36px 0;padding:0;list-style:none;flex:1;">
+        <li style="font-size:.8rem;color:rgba(247,243,236,0.65);padding:7px 0;border-bottom:1px solid rgba(201,147,58,0.1);display:flex;align-items:center;gap:10px;"><span style="color:#c9933a;font-size:.65rem;">✦</span>ATS-optimised formatting</li>
+        <li style="font-size:.8rem;color:rgba(247,243,236,0.65);padding:7px 0;border-bottom:1px solid rgba(201,147,58,0.1);display:flex;align-items:center;gap:10px;"><span style="color:#c9933a;font-size:.65rem;">✦</span>Keyword-tailored to your role</li>
+        <li style="font-size:.8rem;color:rgba(247,243,236,0.65);padding:7px 0;border-bottom:1px solid rgba(201,147,58,0.1);display:flex;align-items:center;gap:10px;"><span style="color:#c9933a;font-size:.65rem;">✦</span>Tailored to your target industry</li>
+        <li style="font-size:.8rem;color:rgba(247,243,236,0.65);padding:7px 0;display:flex;align-items:center;gap:10px;"><span style="color:#c9933a;font-size:.65rem;">✦</span>Delivered in PDF + DOCX</li>
+      </ul>
+      <button onclick="openBooking('Resume Writing','₹299')" style="width:100%;padding:13px;background:none;color:#e8b86d;border:1px solid rgba(201,147,58,0.4);border-radius:4px;font-size:.75rem;font-weight:700;text-transform:uppercase;letter-spacing:.1em;cursor:pointer;transition:all .2s;" onmouseover="this.style.background='#c9933a';this.style.color='#0d0c0b';this.style.borderColor='#c9933a'" onmouseout="this.style.background='none';this.style.color='#e8b86d';this.style.borderColor='rgba(201,147,58,0.4)'">Book Now</button>
+    </div>
+
+    <!-- CV Writing -->
+    <div style="background:#0f0e0d;padding:36px 32px;display:flex;flex-direction:column;transition:background .2s;border-left:1px solid rgba(201,147,58,0.15);" onmouseover="this.style.background='#161210'" onmouseout="this.style.background='#0f0e0d'">
+      <div style="font-size:.65rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#c9933a;margin-bottom:20px;">24-HOUR DELIVERY</div>
+      <h3 class="font-serif" style="font-size:1.5rem;font-weight:700;color:#f7f3ec;margin-bottom:8px;">CV Writing</h3>
+      <p style="font-size:.875rem;color:rgba(247,243,236,0.5);font-weight:300;margin-bottom:28px;line-height:1.6;">Comprehensive CVs for academic, medical, research, and international applications.</p>
+      <div style="margin-bottom:6px;"><span style="font-size:.85rem;color:rgba(247,243,236,0.3);text-decoration:line-through;">₹1,299</span></div>
+      <div style="margin-bottom:4px;"><span class="font-serif" style="font-size:2.5rem;font-weight:700;color:#e8b86d;line-height:1;">₹399</span></div>
+      <p style="font-size:.7rem;color:rgba(247,243,236,0.35);margin-bottom:28px;">one-time · revisions included</p>
+      <ul style="margin:0 0 36px 0;padding:0;list-style:none;flex:1;">
+        <li style="font-size:.8rem;color:rgba(247,243,236,0.65);padding:7px 0;border-bottom:1px solid rgba(201,147,58,0.1);display:flex;align-items:center;gap:10px;"><span style="color:#c9933a;font-size:.65rem;">✦</span>Academic & research focused</li>
+        <li style="font-size:.8rem;color:rgba(247,243,236,0.65);padding:7px 0;border-bottom:1px solid rgba(201,147,58,0.1);display:flex;align-items:center;gap:10px;"><span style="color:#c9933a;font-size:.65rem;">✦</span>Publications & achievements</li>
+        <li style="font-size:.8rem;color:rgba(247,243,236,0.65);padding:7px 0;border-bottom:1px solid rgba(201,147,58,0.1);display:flex;align-items:center;gap:10px;"><span style="color:#c9933a;font-size:.65rem;">✦</span>International format ready</li>
+        <li style="font-size:.8rem;color:rgba(247,243,236,0.65);padding:7px 0;display:flex;align-items:center;gap:10px;"><span style="color:#c9933a;font-size:.65rem;">✦</span>Delivered in PDF + DOCX</li>
+      </ul>
+      <button onclick="openBooking('CV Writing','₹399')" style="width:100%;padding:13px;background:none;color:#e8b86d;border:1px solid rgba(201,147,58,0.4);border-radius:4px;font-size:.75rem;font-weight:700;text-transform:uppercase;letter-spacing:.1em;cursor:pointer;transition:all .2s;" onmouseover="this.style.background='#c9933a';this.style.color='#0d0c0b';this.style.borderColor='#c9933a'" onmouseout="this.style.background='none';this.style.color='#e8b86d';this.style.borderColor='rgba(201,147,58,0.4)'">Book Now</button>
+    </div>
+
+    <!-- Cover Letter -->
+    <div style="background:#0f0e0d;padding:36px 32px;display:flex;flex-direction:column;transition:background .2s;border-left:1px solid rgba(201,147,58,0.15);" onmouseover="this.style.background='#161210'" onmouseout="this.style.background='#0f0e0d'">
+      <div style="font-size:.65rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#c9933a;margin-bottom:20px;">24-HOUR DELIVERY</div>
+      <h3 class="font-serif" style="font-size:1.5rem;font-weight:700;color:#f7f3ec;margin-bottom:8px;">Cover Letter</h3>
+      <p style="font-size:.875rem;color:rgba(247,243,236,0.5);font-weight:300;margin-bottom:28px;line-height:1.6;">Compelling narrative tailored to your specific role and company. Bespoke every time.</p>
+      <div style="margin-bottom:6px;"><span style="font-size:.85rem;color:rgba(247,243,236,0.3);text-decoration:line-through;">₹699</span></div>
+      <div style="margin-bottom:4px;"><span class="font-serif" style="font-size:2.5rem;font-weight:700;color:#e8b86d;line-height:1;">₹199</span></div>
+      <p style="font-size:.7rem;color:rgba(247,243,236,0.35);margin-bottom:28px;">one-time · revisions included</p>
+      <ul style="margin:0 0 36px 0;padding:0;list-style:none;flex:1;">
+        <li style="font-size:.8rem;color:rgba(247,243,236,0.65);padding:7px 0;border-bottom:1px solid rgba(201,147,58,0.1);display:flex;align-items:center;gap:10px;"><span style="color:#c9933a;font-size:.65rem;">✦</span>Role-specific & personalised</li>
+        <li style="font-size:.8rem;color:rgba(247,243,236,0.65);padding:7px 0;border-bottom:1px solid rgba(201,147,58,0.1);display:flex;align-items:center;gap:10px;"><span style="color:#c9933a;font-size:.65rem;">✦</span>Complements your resume</li>
+        <li style="font-size:.8rem;color:rgba(247,243,236,0.65);padding:7px 0;border-bottom:1px solid rgba(201,147,58,0.1);display:flex;align-items:center;gap:10px;"><span style="color:#c9933a;font-size:.65rem;">✦</span>Opens conversations</li>
+        <li style="font-size:.8rem;color:rgba(247,243,236,0.65);padding:7px 0;display:flex;align-items:center;gap:10px;"><span style="color:#c9933a;font-size:.65rem;">✦</span>Delivered in PDF + DOCX</li>
+      </ul>
+      <button onclick="openBooking('Cover Letter','₹199')" style="width:100%;padding:13px;background:none;color:#e8b86d;border:1px solid rgba(201,147,58,0.4);border-radius:4px;font-size:.75rem;font-weight:700;text-transform:uppercase;letter-spacing:.1em;cursor:pointer;transition:all .2s;" onmouseover="this.style.background='#c9933a';this.style.color='#0d0c0b';this.style.borderColor='#c9933a'" onmouseout="this.style.background='none';this.style.color='#e8b86d';this.style.borderColor='rgba(201,147,58,0.4)'">Book Now</button>
+    </div>
+
+    <!-- LinkedIn Overhaul -->
+    <div style="background:#0f0e0d;padding:36px 32px;display:flex;flex-direction:column;transition:background .2s;border-left:1px solid rgba(201,147,58,0.15);" onmouseover="this.style.background='#161210'" onmouseout="this.style.background='#0f0e0d'">
+      <div style="font-size:.65rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#c9933a;margin-bottom:20px;">24-HOUR DELIVERY</div>
+      <h3 class="font-serif" style="font-size:1.5rem;font-weight:700;color:#f7f3ec;margin-bottom:8px;">LinkedIn Overhaul</h3>
+      <p style="font-size:.875rem;color:rgba(247,243,236,0.5);font-weight:300;margin-bottom:28px;line-height:1.6;">Full profile rewrite to attract recruiters and grow your professional network.</p>
+      <div style="margin-bottom:6px;"><span style="font-size:.85rem;color:rgba(247,243,236,0.3);text-decoration:line-through;">₹2,499</span></div>
+      <div style="margin-bottom:4px;"><span class="font-serif" style="font-size:2.5rem;font-weight:700;color:#e8b86d;line-height:1;">₹1,299</span></div>
+      <p style="font-size:.7rem;color:rgba(247,243,236,0.35);margin-bottom:28px;">one-time · revisions included</p>
+      <ul style="margin:0 0 36px 0;padding:0;list-style:none;flex:1;">
+        <li style="font-size:.8rem;color:rgba(247,243,236,0.65);padding:7px 0;border-bottom:1px solid rgba(201,147,58,0.1);display:flex;align-items:center;gap:10px;"><span style="color:#c9933a;font-size:.65rem;">✦</span>Headline & summary rewrite</li>
+        <li style="font-size:.8rem;color:rgba(247,243,236,0.65);padding:7px 0;border-bottom:1px solid rgba(201,147,58,0.1);display:flex;align-items:center;gap:10px;"><span style="color:#c9933a;font-size:.65rem;">✦</span>Keyword optimised for search</li>
+        <li style="font-size:.8rem;color:rgba(247,243,236,0.65);padding:7px 0;border-bottom:1px solid rgba(201,147,58,0.1);display:flex;align-items:center;gap:10px;"><span style="color:#c9933a;font-size:.65rem;">✦</span>Attracts inbound recruiters</li>
+        <li style="font-size:.8rem;color:rgba(247,243,236,0.65);padding:7px 0;display:flex;align-items:center;gap:10px;"><span style="color:#c9933a;font-size:.65rem;">✦</span>Profile + About section</li>
+      </ul>
+      <button onclick="openBooking('LinkedIn Overhaul','₹1,299')" style="width:100%;padding:13px;background:none;color:#e8b86d;border:1px solid rgba(201,147,58,0.4);border-radius:4px;font-size:.75rem;font-weight:700;text-transform:uppercase;letter-spacing:.1em;cursor:pointer;transition:all .2s;" onmouseover="this.style.background='#c9933a';this.style.color='#0d0c0b';this.style.borderColor='#c9933a'" onmouseout="this.style.background='none';this.style.color='#e8b86d';this.style.borderColor='rgba(201,147,58,0.4)'">Book Now</button>
+    </div>
+
+    <!-- Full Career Branding Kit — Featured -->
+    <div style="background:#1a1208;padding:36px 32px;display:flex;flex-direction:column;position:relative;border-left:1px solid rgba(201,147,58,0.3);">
+      <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:20px;">
+        <div style="font-size:.65rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#c9933a;">24-HOUR DELIVERY</div>
+        <div style="font-size:.6rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:3px 10px;background:#c9933a;color:#0d0c0b;border-radius:999px;">BEST VALUE</div>
+      </div>
+      <h3 class="font-serif" style="font-size:1.5rem;font-weight:700;color:#f7f3ec;margin-bottom:8px;">Full Career Branding Kit</h3>
+      <p style="font-size:.875rem;color:rgba(247,243,236,0.5);font-weight:300;margin-bottom:28px;line-height:1.6;">Every document your career needs — in one complete package.</p>
+      <div style="margin-bottom:6px;"><span style="font-size:.85rem;color:rgba(247,243,236,0.3);text-decoration:line-through;">₹4,999</span></div>
+      <div style="margin-bottom:4px;"><span class="font-serif" style="font-size:2.5rem;font-weight:700;color:#e8b86d;line-height:1;">₹1,999</span></div>
+      <p style="font-size:.7rem;color:rgba(247,243,236,0.35);margin-bottom:28px;">one-time · 2 rounds of revisions</p>
+      <ul style="margin:0 0 36px 0;padding:0;list-style:none;flex:1;">
+        <li style="font-size:.8rem;color:rgba(247,243,236,0.65);padding:7px 0;border-bottom:1px solid rgba(201,147,58,0.1);display:flex;align-items:center;gap:10px;"><span style="color:#c9933a;font-size:.65rem;">✦</span>ATS-optimised Resume</li>
+        <li style="font-size:.8rem;color:rgba(247,243,236,0.65);padding:7px 0;border-bottom:1px solid rgba(201,147,58,0.1);display:flex;align-items:center;gap:10px;"><span style="color:#c9933a;font-size:.65rem;">✦</span>Cover Letter</li>
+        <li style="font-size:.8rem;color:rgba(247,243,236,0.65);padding:7px 0;border-bottom:1px solid rgba(201,147,58,0.1);display:flex;align-items:center;gap:10px;"><span style="color:#c9933a;font-size:.65rem;">✦</span>LinkedIn Profile Overhaul</li>
+        <li style="font-size:.8rem;color:rgba(247,243,236,0.65);padding:7px 0;display:flex;align-items:center;gap:10px;"><span style="color:#c9933a;font-size:.65rem;">✦</span>Professional Bio</li>
+      </ul>
+      <button onclick="openBooking('Full Career Branding Kit','₹1,999')" style="width:100%;padding:13px;background:#c9933a;color:#0d0c0b;border:none;border-radius:4px;font-size:.75rem;font-weight:700;text-transform:uppercase;letter-spacing:.1em;cursor:pointer;" onmouseover="this.style.background='#e8b86d'" onmouseout="this.style.background='#c9933a'">Book Now</button>
+    </div>
+
+  </div>
+  <p style="font-size:.75rem;color:rgba(247,243,236,0.3);text-align:center;margin-top:24px;">All services include 24-hour turnaround and revisions. Payment via bank transfer after your meeting.</p>
+</section>
+
+<!-- TEMPLATES -->
+<section id="templates" style="padding:96px 5vw;border-top:1px solid rgba(201,147,58,0.18);">
+  <p style="font-size:.75rem;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:#c9933a;margin-bottom:12px;">Resume Templates</p>
+  <h2 class="font-serif" style="font-size:clamp(1.875rem,4vw,2.25rem);font-weight:600;line-height:1.2;letter-spacing:-.02em;margin-bottom:8px;">23 ATS-Optimized Templates.<br/>Built to Land Interviews.</h2>
+  <p style="color:rgba(247,243,236,0.55);font-weight:300;max-width:512px;margin-bottom:32px;">Every template is ATS-optimised, recruiter-approved, and supports photo uploads. Choose one and we'll build your resume around it.</p>
+  <div id="filters-wrap" style="position:relative;margin-bottom:32px;"><div id="filters" style="display:flex;gap:8px;flex-wrap:wrap;"></div></div>
+  <div id="template-grid" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:16px;"></div>
+  <div style="margin-top:64px;display:flex;flex-direction:column;align-items:center;gap:24px;">
+    <p style="color:rgba(247,243,236,0.6);text-align:center;max-width:400px;">Not sure which template to choose? Let our experts craft the perfect resume for you.</p>
+    <a href="#pricing" style="display:flex;align-items:center;gap:12px;background:#c9933a;color:#0d0c0b;padding:16px 32px;border-radius:6px;font-size:.875rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;text-decoration:none;" onmouseover="this.style.background='#e8b86d';this.style.transform='scale(1.05)'" onmouseout="this.style.background='#c9933a';this.style.transform=''">
+      Get Your Resume Written
+      <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+    </a>
+  </div>
+  <div style="margin-top:48px;display:flex;align-items:center;justify-content:center;gap:8px;color:rgba(247,243,236,0.25);">
+    <span style="font-size:.75rem;letter-spacing:.1em;">Powered by</span>
+    <span class="font-serif" style="font-size:.875rem;font-weight:600;">Draft<span style="color:rgba(201,147,58,0.5);">ora</span></span>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer style="padding:32px 5vw;border-top:1px solid rgba(201,147,58,0.18);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:16px;">
+  <div class="font-serif" style="font-size:1.125rem;font-weight:700;color:#f7f3ec;">Draft<span style="color:#c9933a;">ora</span></div>
+  <p style="font-size:.75rem;letter-spacing:.05em;color:rgba(247,243,236,0.28);">&copy; <span id="year"></span> Draftora. All rights reserved. &nbsp;&middot;&nbsp; <a href="mailto:support@draftora.shop" style="color:rgba(247,243,236,0.28);text-decoration:none;" onmouseover="this.style.color='#c9933a'" onmouseout="this.style.color='rgba(247,243,236,0.28)'">support@draftora.shop</a> &nbsp;&middot;&nbsp; <button onclick="openPrivacy()" style="background:none;border:none;cursor:pointer;font-size:.75rem;letter-spacing:.05em;color:rgba(247,243,236,0.28);padding:0;font-family:'DM Sans',sans-serif;" onmouseover="this.style.color='#c9933a'" onmouseout="this.style.color='rgba(247,243,236,0.28)'">Privacy Policy</button> &nbsp;&middot;&nbsp; <button onclick="openTerms()" style="background:none;border:none;cursor:pointer;font-size:.75rem;letter-spacing:.05em;color:rgba(247,243,236,0.28);padding:0;font-family:'DM Sans',sans-serif;" onmouseover="this.style.color='#c9933a'" onmouseout="this.style.color='rgba(247,243,236,0.28)'">Terms of Service</button></p>
+</footer>
+
+</div><!-- /landing-view -->
+
+<!-- ═══════════════════════════════ PRIVACY POLICY MODAL ══════════════════════ -->
+<div id="privacy-modal" class="legal-modal" role="dialog" aria-modal="true" aria-labelledby="privacy-modal-title" onclick="if(event.target===this)closePrivacy()">
+  <div class="legal-modal-box">
+    <div class="legal-modal-header">
+      <div>
+        <p style="font-size:.65rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:#c9933a;margin-bottom:4px;">Legal</p>
+        <h2 id="privacy-modal-title" class="font-serif" style="font-size:1.375rem;font-weight:700;color:#f7f3ec;margin:0;">Privacy Policy</h2>
+      </div>
+      <button onclick="closePrivacy()" aria-label="Close privacy policy" style="background:none;border:none;cursor:pointer;color:rgba(247,243,236,0.4);padding:4px;" onmouseover="this.style.color='#f7f3ec'" onmouseout="this.style.color='rgba(247,243,236,0.4)'">
+        <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+      </button>
+    </div>
+    <div class="legal-modal-body">
+
+      <p style="font-size:.75rem;color:rgba(247,243,236,0.35);margin-bottom:20px;">Last updated: <span id="privacy-date"></span></p>
+
+      <p>Draftora ("we", "us", or "our") operates <a href="https://draftora.shop">draftora.shop</a>. This Privacy Policy explains how we collect, use, and protect your personal information when you use our website and services. By using Draftora, you agree to the practices described below.</p>
+
+      <h2>1. Information We Collect</h2>
+      <p>We collect information you provide directly to us, including:</p>
+      <ul>
+        <li><strong style="color:#f7f3ec;font-weight:500;">Booking information</strong> — your name, email address, selected service, and preferred meeting time when you book a service.</li>
+        <li><strong style="color:#f7f3ec;font-weight:500;">Resume content</strong> — name, professional title, contact details, work history, education, skills, and any other information you enter into the resume editor. This data is processed entirely in your browser and is never sent to our servers.</li>
+        <li><strong style="color:#f7f3ec;font-weight:500;">Profile photo</strong> — if you choose to upload one. This is processed locally in your browser only.</li>
+        <li><strong style="color:#f7f3ec;font-weight:500;">Usage data</strong> — pages visited, time on site, browser type, and device type, collected automatically via standard web analytics.</li>
+      </ul>
+
+      <h2>2. How We Use Your Information</h2>
+      <p>We use the information we collect to:</p>
+      <ul>
+        <li>Process and fulfil your service bookings and schedule discovery meetings.</li>
+        <li>Respond to enquiries sent to <a href="mailto:support@draftora.shop">support@draftora.shop</a>.</li>
+        <li>Understand how visitors use the site so we can improve it.</li>
+        <li>Comply with legal obligations.</li>
+      </ul>
+      <p>We do not sell, rent, or trade your personal information to third parties. We do not use your resume content for any purpose — it never leaves your device.</p>
+
+      <h2>3. Resume Editor Data</h2>
+      <p>All data you enter into the Draftora resume editor — including your name, contact details, work history, education, skills, and uploaded photo — is processed <strong style="color:#f7f3ec;font-weight:500;">entirely within your browser</strong>. It is not transmitted to, stored on, or accessible by Draftora's servers at any point. When you close or refresh the page, this data is gone. We recommend saving your resume PDF before leaving.</p>
+
+      <h2>4. Booking Data</h2>
+      <p>When you submit a booking through our site, your name, email address, selected service, and preferred meeting time are stored securely in our database (Supabase, hosted on AWS infrastructure in the South Asia region). We use this information solely to contact you and fulfil your service booking. We will not use your booking information for unsolicited marketing.</p>
+      <p>To request deletion of your booking data, contact us at <a href="mailto:support@draftora.shop">support@draftora.shop</a> with the subject line "Delete my data".</p>
+
+      <h2>5. Cookies &amp; Analytics</h2>
+      <p>We may use cookies or similar technologies to understand traffic patterns and improve the site. We do not use advertising cookies or sell data to ad networks. You can disable cookies in your browser settings at any time.</p>
+
+      <h2>6. Third-Party Services</h2>
+      <p>Our website uses the following third-party services that may process data on our behalf:</p>
+      <ul>
+        <li><strong style="color:#f7f3ec;font-weight:500;">Supabase</strong> — booking data storage (AWS, South Asia region).</li>
+        <li><strong style="color:#f7f3ec;font-weight:500;">Google Fonts</strong> — font delivery; Google may log the request IP.</li>
+        <li><strong style="color:#f7f3ec;font-weight:500;">Cloudflare CDN</strong> — PDF export library delivery.</li>
+      </ul>
+      <p>Each of these providers has their own privacy policy. We choose providers who maintain appropriate data protection standards.</p>
+
+      <h2>7. Data Security</h2>
+      <p>We take reasonable technical measures to protect the information we hold, including encrypted connections (HTTPS) and access-controlled databases. No method of internet transmission is 100% secure, and we cannot guarantee absolute security.</p>
+
+      <h2>8. Children's Privacy</h2>
+      <p>Draftora is not directed at children under the age of 16. We do not knowingly collect personal information from anyone under 16. If you believe we have inadvertently collected such information, please contact us and we will delete it promptly.</p>
+
+      <h2>9. Your Rights</h2>
+      <p>Depending on your location, you may have the right to access, correct, or delete personal data we hold about you. To exercise any of these rights, contact us at <a href="mailto:support@draftora.shop">support@draftora.shop</a>. We will respond within 1 business day.</p>
+
+      <h2>10. Changes to This Policy</h2>
+      <p>We may update this Privacy Policy from time to time. When we do, we will revise the "Last updated" date at the top of this page. Continued use of the site after changes constitutes acceptance of the updated policy.</p>
+
+      <h2>11. Contact</h2>
+      <p>Questions about this Privacy Policy? Reach us at <a href="mailto:support@draftora.shop">support@draftora.shop</a>.</p>
+
+    </div>
+    <div class="legal-modal-footer">
+      <button class="legal-close-btn" onclick="closePrivacy()">Close</button>
+    </div>
+  </div>
+</div>
+
+
+<!-- ═══════════════════════════════ TERMS OF SERVICE MODAL ═══════════════════ -->
+<div id="terms-modal" class="legal-modal" role="dialog" aria-modal="true" aria-labelledby="terms-modal-title" onclick="if(event.target===this)closeTerms()">
+  <div class="legal-modal-box">
+    <div class="legal-modal-header">
+      <div>
+        <p style="font-size:.65rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:#c9933a;margin-bottom:4px;">Legal</p>
+        <h2 id="terms-modal-title" class="font-serif" style="font-size:1.375rem;font-weight:700;color:#f7f3ec;margin:0;">Terms of Service</h2>
+      </div>
+      <button onclick="closeTerms()" aria-label="Close terms of service" style="background:none;border:none;cursor:pointer;color:rgba(247,243,236,0.4);padding:4px;" onmouseover="this.style.color='#f7f3ec'" onmouseout="this.style.color='rgba(247,243,236,0.4)'">
+        <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+      </button>
+    </div>
+    <div class="legal-modal-body">
+
+      <p style="font-size:.75rem;color:rgba(247,243,236,0.35);margin-bottom:20px;">Last updated: <span id="terms-date"></span></p>
+
+      <p>Please read these Terms of Service ("Terms") carefully before using <a href="https://draftora.shop">draftora.shop</a> (the "Site") operated by Draftora ("we", "us", or "our"). By accessing or using the Site, you agree to be bound by these Terms. If you do not agree, please do not use the Site.</p>
+
+      <h2>1. Acceptance of Terms</h2>
+      <p>By accessing the Site or using any Draftora service, you confirm that you are at least 16 years of age and have the legal capacity to enter into these Terms. If you are using the Site on behalf of an organisation, you represent that you have authority to bind that organisation.</p>
+
+      <h2>2. Description of Services</h2>
+      <p>Draftora provides an online resume-building tool and professional career document writing services. Our services include:</p>
+      <ul>
+        <li>A browser-based resume editor with downloadable PDF output.</li>
+        <li>Professional writing services for resumes, CVs, cover letters, LinkedIn profiles, and professional bios — fulfilled by human career writers.</li>
+        <li>Access to resume templates for personal, non-commercial use.</li>
+      </ul>
+      <p>We reserve the right to modify, suspend, or discontinue any part of the Site or services at any time without notice.</p>
+
+      <h2>3. Bookings &amp; Payments</h2>
+      <p>By submitting a booking through our site, you consent to be contacted by Draftora to schedule a discovery meeting. Payment is collected via bank transfer after your discovery meeting is confirmed. All prices displayed are in Indian Rupees (₹) and are inclusive of any applicable taxes unless stated otherwise. Prices are subject to change, but your agreed price will be honoured once a booking is confirmed.</p>
+
+      <h2>4. Resume Editor — Your Content</h2>
+      <p>All content you enter into the resume editor (personal details, work history, education, skills, photo) is processed entirely within your browser and is never transmitted to or stored on our servers. You retain full ownership of your resume content. Draftora makes no claim to any information you enter into the editor.</p>
+      <p>You are solely responsible for the accuracy of the information in your resume. Draftora is not liable for any outcomes resulting from the content of resumes created using our tools.</p>
+
+      <h2>5. Intellectual Property</h2>
+      <p>All content on the Site — including but not limited to the Draftora name, logo, design, copy, templates, and software — is the exclusive property of Draftora and is protected by applicable intellectual property laws.</p>
+      <p>You may not reproduce, distribute, modify, or create derivative works of any part of the Site without our prior written consent. The resume templates are licensed to you for personal use only — you may not resell or sublicense them.</p>
+
+      <h2>6. Acceptable Use</h2>
+      <p>You agree not to:</p>
+      <ul>
+        <li>Use the Site for any unlawful purpose or in violation of any applicable law or regulation.</li>
+        <li>Submit false, misleading, or fraudulent information.</li>
+        <li>Attempt to gain unauthorised access to any part of the Site or its infrastructure.</li>
+        <li>Use automated tools (bots, scrapers, crawlers) to access or extract content from the Site without permission.</li>
+        <li>Interfere with or disrupt the integrity or performance of the Site.</li>
+        <li>Impersonate any person or entity or misrepresent your affiliation with any person or entity.</li>
+      </ul>
+
+      <h2>7. Disclaimer of Warranties</h2>
+      <p>The Site and its services are provided on an "as is" and "as available" basis without warranties of any kind, either express or implied, including but not limited to implied warranties of merchantability, fitness for a particular purpose, or non-infringement.</p>
+      <p>We do not warrant that the Site will be uninterrupted, error-free, or free of viruses or other harmful components. We do not guarantee any specific employment outcome as a result of using our services.</p>
+
+      <h2>8. Limitation of Liability</h2>
+      <p>To the fullest extent permitted by law, Draftora shall not be liable for any indirect, incidental, special, consequential, or punitive damages — including loss of profits, data, or goodwill — arising out of or in connection with your use of the Site or services, even if we have been advised of the possibility of such damages.</p>
+      <p>Our total liability to you for any claim arising under these Terms shall not exceed the amount you paid to Draftora in the 12 months preceding the claim, or ₹5,000 (INR), whichever is greater.</p>
+
+      <h2>9. Third-Party Links</h2>
+      <p>The Site may contain links to third-party websites. These links are provided for convenience only. Draftora has no control over the content of those sites and accepts no responsibility for them or for any loss or damage that may arise from your use of them.</p>
+
+      <h2>10. Governing Law</h2>
+      <p>These Terms shall be governed by and construed in accordance with applicable law. Any disputes arising under these Terms shall be subject to the exclusive jurisdiction of the courts of the applicable territory. If any provision of these Terms is found to be unenforceable, the remaining provisions will continue in full force.</p>
+
+      <h2>11. Changes to These Terms</h2>
+      <p>We may update these Terms from time to time. We will indicate the date of the most recent update at the top of this page. Continued use of the Site after changes are posted constitutes your acceptance of the revised Terms.</p>
+
+      <h2>12. Contact</h2>
+      <p>Questions about these Terms? Contact us at <a href="mailto:support@draftora.shop">support@draftora.shop</a>.</p>
+
+    </div>
+    <div class="legal-modal-footer">
+      <button class="legal-close-btn" onclick="closeTerms()">Close</button>
+    </div>
+  </div>
+</div>
+<div id="editor-view">
+
+  <!-- EDITOR HEADER -->
+  <header class="no-print" style="position:sticky;top:0;z-index:50;background:rgba(13,12,11,0.95);border-bottom:1px solid rgba(201,147,58,0.18);backdrop-filter:blur(12px);">
+    <div style="padding:16px 24px;display:flex;align-items:center;justify-content:space-between;gap:16px;">
+      <div style="display:flex;align-items:center;gap:16px;">
+        <button onclick="goHome()" style="display:flex;align-items:center;gap:8px;color:rgba(247,243,236,0.6);background:none;border:none;cursor:pointer;font-size:.875rem;" onmouseover="this.style.color='#e8b86d'" onmouseout="this.style.color='rgba(247,243,236,0.6)'">
+          <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 12H5M12 19l-7-7 7-7"/></svg>Templates
+        </button>
+        <div style="width:1px;height:24px;background:rgba(201,147,58,0.18);"></div>
+        <div class="font-serif" style="font-size:1.25rem;font-weight:700;color:#f7f3ec;">Draft<span style="color:#c9933a;">ora</span></div>
+      </div>
+      <div style="display:flex;align-items:center;gap:12px;">
+        <span id="ed-template-label" style="font-size:.875rem;color:rgba(247,243,236,0.6);">Template: <span id="ed-template-name" style="color:#e8b86d;font-weight:500;"></span></span>
+        <button id="ed-download-btn" onclick="downloadPDF()" style="display:flex;align-items:center;gap:8px;background:#c9933a;color:#0d0c0b;border:none;border-radius:4px;padding:10px 20px;font-size:.875rem;font-weight:600;cursor:pointer;" onmouseover="this.style.background='#e8b86d'" onmouseout="this.style.background='#c9933a'">
+          <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+          <span>Download PDF</span>
+        </button>
+      </div>
+    </div>
+    <!-- Mobile tabs -->
+    <div id="ed-mobile-tabs" class="no-print" style="display:none;border-top:1px solid rgba(201,147,58,0.18);">
+      <button class="etab-btn active" id="etab-edit" onclick="edSwitchTab('edit')">
+        <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"/></svg>Edit
+      </button>
+      <button class="etab-btn" id="etab-preview" onclick="edSwitchTab('preview')">
+        <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/></svg>Preview
+      </button>
+    </div>
+  </header>
+
+  <!-- EDITOR MAIN -->
+  <div id="ed-main" style="display:grid;grid-template-columns:1fr 1fr;min-height:calc(100vh - 65px);">
+
+    <!-- Left: Edit Panel -->
+    <div id="ed-editor-panel" class="no-print" style="background:#161412;border-right:1px solid rgba(201,147,58,0.18);overflow-y:auto;max-height:calc(100vh - 65px);">
+      <div style="padding:24px;max-width:600px;">
+        <div style="display:flex;align-items:center;gap:8px;color:#e8b86d;margin-bottom:32px;">
+          <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"/></svg>
+          <h2 style="font-weight:600;color:#f7f3ec;font-size:1rem;">Edit Your Resume</h2>
+        </div>
+
+        <!-- Photo -->
+        <section style="margin-bottom:32px;">
+          <span class="section-label">Profile Photo</span>
+          <div style="display:flex;align-items:center;gap:16px;">
+            <div id="ed-photo-wrap">
+              <button id="ed-photo-add" onclick="document.getElementById('ed-photo-input').click()" style="width:80px;height:80px;border-radius:50%;border:2px dashed rgba(201,147,58,0.4);background:none;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;color:rgba(247,243,236,0.5);cursor:pointer;" onmouseover="this.style.borderColor='#c9933a';this.style.color='#e8b86d'" onmouseout="this.style.borderColor='rgba(201,147,58,0.4)';this.style.color='rgba(247,243,236,0.5)'">
+                <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 9a2 2 0 012-2h.93a2 2 0 001.664-.89l.812-1.22A2 2 0 0110.07 4h3.86a2 2 0 011.664.89l.812 1.22A2 2 0 0018.07 7H19a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V9z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 13a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+                <span style="font-size:.6rem;text-transform:uppercase;letter-spacing:.05em;">Add</span>
+              </button>
+              <div id="ed-photo-display" style="display:none;position:relative;width:80px;height:80px;">
+                <img id="ed-photo-img" src="" alt="Profile" style="width:80px;height:80px;border-radius:50%;object-fit:cover;border:2px solid #c9933a;"/>
+                <button onclick="edRemovePhoto()" aria-label="Remove profile photo" style="position:absolute;top:-4px;right:-4px;width:22px;height:22px;background:#ef4444;border:none;border-radius:50%;display:flex;align-items:center;justify-content:center;cursor:pointer;color:white;">
+                  <svg width="10" height="10" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M6 18L18 6M6 6l12 12"/></svg>
+                </button>
+              </div>
+            </div>
+            <input type="file" id="ed-photo-input" accept="image/*" style="display:none;" onchange="edHandlePhoto(event)"/>
+            <div>
+              <p id="ed-photo-status" style="font-size:.875rem;color:rgba(247,243,236,0.6);">Add a professional photo</p>
+              <p style="font-size:.75rem;color:rgba(247,243,236,0.35);margin-top:4px;">Optional. Photo will appear on your resume.</p>
+              <button id="ed-photo-upload-btn" onclick="document.getElementById('ed-photo-input').click()" style="margin-top:8px;font-size:.75rem;color:#e8b86d;background:none;border:none;cursor:pointer;display:flex;align-items:center;gap:4px;padding:0;" onmouseover="this.style.color='#c9933a'" onmouseout="this.style.color='#e8b86d'">
+                <svg width="12" height="12" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-8l-4-4m0 0L8 8m4-4v12"/></svg>Upload Photo
+              </button>
+            </div>
+          </div>
+        </section>
+
+        <!-- Personal Info -->
+        <section style="margin-bottom:32px;">
+          <span class="section-label">Personal Information</span>
+          <div style="display:grid;gap:10px;">
+            <input class="ed-input" id="ed-name" placeholder="Full Name" oninput="edUpdatePreview()"/>
+            <input class="ed-input" id="ed-title" placeholder="Professional Title" oninput="edUpdatePreview()"/>
+            <div class="ed-grid-2" style="display:grid;grid-template-columns:1fr 1fr;gap:10px;">
+              <input class="ed-input" id="ed-email" type="email" placeholder="Email" oninput="edUpdatePreview()"/>
+              <input class="ed-input" id="ed-phone" placeholder="Phone" oninput="edUpdatePreview()"/>
+            </div>
+            <input class="ed-input" id="ed-location" placeholder="Location" oninput="edUpdatePreview()"/>
+            <div class="ed-grid-2" style="display:grid;grid-template-columns:1fr 1fr;gap:10px;">
+              <input class="ed-input" id="ed-linkedin" placeholder="LinkedIn URL" oninput="edUpdatePreview()"/>
+              <input class="ed-input" id="ed-website" placeholder="Website" oninput="edUpdatePreview()"/>
+            </div>
+          </div>
+        </section>
+
+        <!-- Summary -->
+        <section style="margin-bottom:32px;">
+          <span class="section-label">Professional Summary</span>
+          <textarea class="ed-textarea" id="ed-summary" rows="4" placeholder="Write a compelling summary..." oninput="edUpdatePreview()"></textarea>
+        </section>
+
+        <!-- Experience -->
+        <section style="margin-bottom:32px;">
+          <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:12px;">
+            <span class="section-label" style="margin-bottom:0;">Experience</span>
+            <button class="add-btn" onclick="edAddExp()"><svg width="12" height="12" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"/></svg>Add</button>
+          </div>
+          <div id="ed-exp-list"></div>
+        </section>
+
+        <!-- Education -->
+        <section style="margin-bottom:32px;">
+          <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:12px;">
+            <span class="section-label" style="margin-bottom:0;">Education</span>
+            <button class="add-btn" onclick="edAddEdu()"><svg width="12" height="12" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"/></svg>Add</button>
+          </div>
+          <div id="ed-edu-list"></div>
+        </section>
+
+        <!-- Skills -->
+        <section style="margin-bottom:32px;">
+          <span class="section-label">Skills</span>
+          <textarea class="ed-textarea" id="ed-skills" rows="3" placeholder="Enter skills separated by commas..." oninput="edUpdatePreview()"></textarea>
+        </section>
+
+        <!-- Certifications -->
+        <section style="margin-bottom:32px;">
+          <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:12px;">
+            <span class="section-label" style="margin-bottom:0;">Certifications</span>
+            <button class="add-btn" onclick="edAddCert()"><svg width="12" height="12" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"/></svg>Add</button>
+          </div>
+          <div id="ed-cert-list"></div>
+        </section>
+      </div>
+    </div>
+
+    <!-- Right: Preview Panel -->
+    <div id="ed-preview-panel" style="background:#1a1815;overflow-y:auto;max-height:calc(100vh - 65px);">
+      <div style="padding:32px;">
+        <div class="no-print" style="display:flex;align-items:center;gap:8px;color:#e8b86d;margin-bottom:24px;">
+          <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/></svg>
+          <h2 style="font-weight:600;color:#f7f3ec;font-size:1rem;">Live Preview</h2>
+        </div>
+        <div id="ed-resume-preview" aria-live="polite" aria-label="Resume preview" style="width:100%;max-width:8.5in;margin:0 auto;box-shadow:0 4px 40px rgba(0,0,0,0.5);"></div>
+      </div>
+    </div>
+  </div>
+</div><!-- /editor-view -->
+
+
+<!-- ═══════════════════════════════ BOOKING MODAL ════════════════════════════ -->
+<div id="booking-modal" role="dialog" aria-modal="true" aria-labelledby="booking-modal-title" onclick="if(event.target===this)closeBooking()">
+  <div id="booking-modal-box">
+    <div id="booking-modal-header">
+      <div>
+        <p style="font-size:.65rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:#c9933a;margin-bottom:4px;">Book a Discovery Call</p>
+        <h2 id="booking-modal-title" class="font-serif" style="font-size:1.25rem;font-weight:700;color:#f7f3ec;margin:0;">
+          <span id="booking-service-name">Resume Writing</span> — <span id="booking-service-price">₹299</span>
+        </h2>
+      </div>
+      <div style="display:flex;align-items:center;gap:12px;">
+        <button onclick="closeBooking()" aria-label="Close booking form" style="background:none;border:none;cursor:pointer;color:rgba(247,243,236,0.4);padding:4px;" onmouseover="this.style.color='#f7f3ec'" onmouseout="this.style.color='rgba(247,243,236,0.4)'">
+          <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+        </button>
+      </div>
+    </div>
+    <div id="booking-modal-body">
+      <div id="booking-form-wrap">
+        <p style="font-size:.875rem;color:rgba(247,243,236,0.55);margin-bottom:24px;line-height:1.6;">Fill in your details and we'll send you a meeting link within a few hours. The discovery call is free — no commitment needed.</p>
+        <div style="display:grid;gap:14px;">
+          <div>
+            <label style="font-size:.75rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:rgba(247,243,236,0.5);display:block;margin-bottom:6px;">Full Name</label>
+            <input class="booking-input" id="booking-name" type="text" placeholder="Your full name" autocomplete="name"/>
+          </div>
+          <div>
+            <label style="font-size:.75rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:rgba(247,243,236,0.5);display:block;margin-bottom:6px;">Email Address</label>
+            <input class="booking-input" id="booking-email" type="email" placeholder="your@email.com" autocomplete="email"/>
+          </div>
+          <div>
+            <label style="font-size:.75rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:rgba(247,243,236,0.5);display:block;margin-bottom:6px;">Preferred Meeting Date & Time</label>
+            <input class="booking-input" id="booking-time" type="datetime-local" style="color-scheme:dark;"/>
+          </div>
+        </div>
+      </div>
+      <div id="booking-success" style="display:none;text-align:center;padding:24px 0;">
+        <div style="font-size:2.5rem;margin-bottom:16px;">✦</div>
+        <h3 class="font-serif" style="font-size:1.25rem;font-weight:600;color:#f7f3ec;margin-bottom:8px;">You're booked in.</h3>
+        <p style="font-size:.875rem;color:rgba(247,243,236,0.55);line-height:1.6;">We'll send a meeting link to your email within a few hours. See you soon.</p>
+      </div>
+    </div>
+    <div id="booking-modal-footer">
+      <button id="booking-submit-btn" onclick="submitBooking()" style="background:#c9933a;color:#0d0c0b;border:none;border-radius:4px;padding:10px 28px;font-size:.875rem;font-weight:600;cursor:pointer;width:100%;" onmouseover="this.style.background='#e8b86d'" onmouseout="this.style.background='#c9933a'">Confirm Booking</button>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════ SCRIPTS ═══════════════════════════════════ -->
+<script>
+// ─── Shared data ─────────────────────────────────────────────────────────────
+
+// ─── Booking Modal ────────────────────────────────────────────────────────────
+let bookingService = '', bookingPrice = '';
+
+function openBooking(service, price){
+  bookingService = service;
+  bookingPrice = price;
+  document.getElementById('booking-service-name').textContent = service;
+  document.getElementById('booking-service-price').textContent = price;
+  document.getElementById('booking-name').value = '';
+  document.getElementById('booking-email').value = '';
+  document.getElementById('booking-time').value = '';
+  // Set minimum date to tomorrow
+  const tomorrow = new Date();
+  tomorrow.setDate(tomorrow.getDate() + 1);
+  tomorrow.setHours(0, 0, 0, 0);
+  const pad = n => String(n).padStart(2, '0');
+  const minVal = `${tomorrow.getFullYear()}-${pad(tomorrow.getMonth()+1)}-${pad(tomorrow.getDate())}T00:00`;
+  document.getElementById('booking-time').min = minVal;
+  document.getElementById('booking-form-wrap').style.display = 'block';
+  document.getElementById('booking-success').style.display = 'none';
+  const btn = document.getElementById('booking-submit-btn');
+  btn.textContent = 'Confirm Booking';
+  btn.disabled = false;
+  btn.style.opacity = '1';
+  btn.style.display = 'inline-block';
+  document.getElementById('booking-modal').classList.add('open');
+  document.body.style.overflow = 'hidden';
+  setTimeout(() => document.getElementById('booking-name').focus(), 100);
+}
+
+function closeBooking(){
+  document.getElementById('booking-modal').classList.remove('open');
+  document.body.style.overflow = '';
+}
+
+async function submitBooking(){
+  const name = document.getElementById('booking-name').value.trim();
+  const email = document.getElementById('booking-email').value.trim();
+  const time = document.getElementById('booking-time').value.trim();
+  const emailRe = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+  if(!name){ document.getElementById('booking-name').focus(); document.getElementById('booking-name').style.borderColor='#ef4444'; return; }
+  document.getElementById('booking-name').style.borderColor='';
+  if(!email || !emailRe.test(email)){ document.getElementById('booking-email').focus(); document.getElementById('booking-email').style.borderColor='#ef4444'; return; }
+  document.getElementById('booking-email').style.borderColor='';
+  if(!time){ document.getElementById('booking-time').focus(); document.getElementById('booking-time').style.borderColor='#ef4444'; return; }
+  document.getElementById('booking-time').style.borderColor='';
+
+  const btn = document.getElementById('booking-submit-btn');
+  btn.textContent = 'Booking…';
+  btn.disabled = true;
+  btn.style.opacity = '0.7';
+
+  try {
+    const res = await fetch(SUPABASE_URL + '/rest/v1/bookings', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'apikey': SUPABASE_ANON_KEY,
+        'Authorization': 'Bearer ' + SUPABASE_ANON_KEY,
+        'Prefer': 'return=minimal'
+      },
+      body: JSON.stringify({
+        name: name,
+        email: email,
+        service: bookingService,
+        price: bookingPrice,
+        preferred_time: time
+      })
+    });
+
+    if(res.ok || res.status === 201){
+      document.getElementById('booking-form-wrap').style.display = 'none';
+      document.getElementById('booking-success').style.display = 'block';
+      document.getElementById('booking-submit-btn').style.display = 'none';
+    } else {
+      const errData = await res.json().catch(()=>({}));
+      console.error('Supabase error:', res.status, errData);
+      throw new Error(errData.message || errData.error || 'Submission failed: ' + res.status);
+    }
+  } catch(err){
+    console.error('Booking error:', err);
+    btn.textContent = 'Try Again';
+    btn.disabled = false;
+    btn.style.opacity = '1';
+  }
+}
+
+// Close booking modal on Escape
+document.addEventListener('keydown', e => {
+  if(e.key === 'Escape'){ closeBooking(); closePrivacy(); closeTerms(); }
+});
+
+// ─── Privacy Policy Modal ─────────────────────────────────────────────────────
+function openPrivacy(){
+  const modal = document.getElementById('privacy-modal');
+  modal.classList.add('open');
+  document.body.style.overflow = 'hidden';
+  const d = new Date();
+  document.getElementById('privacy-date').textContent = d.toLocaleDateString('en-GB',{day:'numeric',month:'long',year:'numeric'});
+  modal.querySelector('.legal-close-btn').focus();
+}
+function closePrivacy(){
+  document.getElementById('privacy-modal').classList.remove('open');
+  document.body.style.overflow = '';
+}
+
+// ─── Terms of Service Modal ───────────────────────────────────────────────────
+function openTerms(){
+  const modal = document.getElementById('terms-modal');
+  modal.classList.add('open');
+  document.body.style.overflow = 'hidden';
+  const d = new Date();
+  document.getElementById('terms-date').textContent = d.toLocaleDateString('en-GB',{day:'numeric',month:'long',year:'numeric'});
+  modal.querySelector('.legal-close-btn').focus();
+}
+function closeTerms(){
+  document.getElementById('terms-modal').classList.remove('open');
+  document.body.style.overflow = '';
+}
+
+// Close any open legal modal on Escape
+document.addEventListener('keydown', e => {
+  if(e.key === 'Escape'){ closePrivacy(); closeTerms(); }
+});
+const TEMPLATE_NAMES = {monarch:'Monarch',zenith:'Zenith',obsidian:'Obsidian',aurora:'Aurora',polar:'Polar',circuit:'Circuit',ember:'Ember',summit:'Summit',canvas:'Canvas',slate:'Slate',nova:'Nova',midnight:'Midnight',ivory:'Ivory',verdant:'Verdant',titanium:'Titanium',crimson:'Crimson',sapphire:'Sapphire',onyx:'Onyx',pearl:'Pearl',azure:'Azure',amber:'Amber',graphite:'Graphite',rose:'Rose'};
+const SAMPLE_KEYS={monarch:'project-manager',zenith:'software-engineer',obsidian:'finance-analyst',aurora:'data-scientist',polar:'marketing-manager',circuit:'software-engineer',ember:'ux-designer',summit:'project-manager',canvas:'ux-designer',slate:'project-manager',nova:'data-scientist',midnight:'finance-analyst',ivory:'data-scientist',verdant:'project-manager',titanium:'project-manager',crimson:'marketing-manager',sapphire:'finance-analyst',onyx:'marketing-manager',pearl:'project-manager',azure:'software-engineer',amber:'marketing-manager',graphite:'marketing-manager',rose:'ux-designer'};
+const SAMPLES={'product-manager':{personalInfo:{fullName:'Alexandra Chen',title:'Senior Product Manager',email:'alexandra.chen@email.com',phone:'+1 (555) 123-4567',location:'San Francisco, CA',linkedin:'linkedin.com/in/alexandrachen',website:'alexandrachen.com',photoUrl:''},summary:'Results-driven Product Manager with 8+ years of experience leading cross-functional teams to deliver innovative digital products. Proven track record of increasing user engagement by 45% and driving $12M in annual revenue growth.',experience:[{company:'TechCorp Inc.',position:'Senior Product Manager',location:'San Francisco, CA',startDate:'Jan 2021',endDate:'Present',achievements:['Led product strategy for flagship SaaS platform serving 2M+ users, achieving 40% YoY growth','Managed cross-functional team of 15 engineers, designers, and analysts','Implemented A/B testing framework that improved conversion rates by 28%']},{company:'StartupXYZ',position:'Product Manager',location:'New York, NY',startDate:'Mar 2018',endDate:'Dec 2020',achievements:['Launched mobile app from concept to 500K downloads within first year','Reduced customer churn by 35% through targeted feature improvements']}],education:[{institution:'Stanford University',degree:'MBA',field:'Technology Management',graduationDate:'2016',gpa:'3.8'}],skills:['Product Strategy','Agile/Scrum','User Research','A/B Testing','SQL','Jira','Figma','Data Analysis'],certifications:[{name:'Certified Scrum Product Owner (CSPO)',issuer:'Scrum Alliance',date:'2020'}]},'software-engineer':{personalInfo:{fullName:'Marcus Rodriguez',title:'Full Stack Software Engineer',email:'marcus.rodriguez@email.com',phone:'+1 (555) 987-6543',location:'Austin, TX',linkedin:'linkedin.com/in/marcusrodriguez',website:'github.com/mrodriguez',photoUrl:''},summary:'Full Stack Engineer with 6+ years building scalable web applications. Expert in React, Node.js, and cloud architecture. Passionate about clean code, performance optimization, and mentoring junior developers.',experience:[{company:'CloudScale Technologies',position:'Senior Software Engineer',location:'Austin, TX',startDate:'Feb 2022',endDate:'Present',achievements:['Architected microservices infrastructure handling 10M+ daily requests','Reduced page load times by 60% through code splitting and lazy loading','Led migration from monolith to microservices, improving deployment frequency 5x']},{company:'DataFlow Inc.',position:'Software Engineer',location:'Seattle, WA',startDate:'Jun 2019',endDate:'Jan 2022',achievements:['Built real-time data pipeline processing 50TB daily using Kafka and Spark','Implemented CI/CD pipeline reducing deployment time from 2 hours to 15 minutes']}],education:[{institution:'MIT',degree:'Bachelor of Science',field:'Computer Science',graduationDate:'2019',gpa:'3.9'}],skills:['JavaScript','TypeScript','React','Node.js','Python','AWS','Docker','Kubernetes','PostgreSQL','GraphQL'],certifications:[{name:'AWS Solutions Architect Professional',issuer:'Amazon',date:'2023'}]},'ux-designer':{personalInfo:{fullName:'Sophie Williams',title:'Senior UX Designer',email:'sophie.williams@email.com',phone:'+1 (555) 234-5678',location:'Los Angeles, CA',linkedin:'linkedin.com/in/sophiewilliams',website:'sophiewilliams.design',photoUrl:''},summary:'Human-centered UX Designer with 7 years crafting intuitive digital experiences. Expertise in design systems, user research, and accessibility. Led redesigns that increased user satisfaction by 40%.',experience:[{company:'DesignLab Agency',position:'Senior UX Designer',location:'Los Angeles, CA',startDate:'Mar 2021',endDate:'Present',achievements:['Led UX for enterprise SaaS product serving Fortune 500 clients','Created comprehensive design system reducing design inconsistencies by 80%','Conducted 100+ user interviews informing product roadmap decisions']},{company:'Creative Digital',position:'UX Designer',location:'San Diego, CA',startDate:'Aug 2018',endDate:'Feb 2021',achievements:['Redesigned e-commerce checkout flow increasing conversions by 25%','Established user testing protocol adopted across 3 product teams']}],education:[{institution:'Rhode Island School of Design',degree:'Bachelor of Fine Arts',field:'Graphic Design',graduationDate:'2018'}],skills:['Figma','Sketch','Adobe XD','User Research','Prototyping','Design Systems','Accessibility','HTML/CSS'],certifications:[{name:'Google UX Design Certificate',issuer:'Google',date:'2021'}]},'marketing-manager':{personalInfo:{fullName:'David Park',title:'Digital Marketing Manager',email:'david.park@email.com',phone:'+1 (555) 345-6789',location:'Chicago, IL',linkedin:'linkedin.com/in/davidpark',website:'',photoUrl:''},summary:'Data-driven Marketing Manager with 6 years scaling B2B and B2C brands. Expertise in SEO, paid acquisition, and marketing automation. Generated $15M+ in attributed revenue through integrated campaigns.',experience:[{company:'GrowthEngine Inc.',position:'Digital Marketing Manager',location:'Chicago, IL',startDate:'Jan 2022',endDate:'Present',achievements:['Scaled paid acquisition channels from $500K to $3M annual spend with consistent 4x ROAS','Built and managed team of 5 marketing specialists across SEO, paid, and content','Implemented marketing attribution system tracking customer journey across 8 touchpoints']},{company:'BrandBoost Agency',position:'Marketing Specialist',location:'Chicago, IL',startDate:'May 2019',endDate:'Dec 2021',achievements:['Managed $1.2M annual ad budget across Google, Meta, and LinkedIn','Increased organic traffic 150% through technical SEO and content strategy']}],education:[{institution:'Northwestern University',degree:'Bachelor of Arts',field:'Marketing',graduationDate:'2019'}],skills:['Google Ads','Meta Ads','SEO','HubSpot','Salesforce','Google Analytics','Content Strategy','Marketing Automation'],certifications:[{name:'Google Ads Certification',issuer:'Google',date:'2023'},{name:'HubSpot Marketing Certification',issuer:'HubSpot',date:'2022'}]},'data-scientist':{personalInfo:{fullName:'Dr. Emily Nakamura',title:'Senior Data Scientist',email:'emily.nakamura@email.com',phone:'+1 (555) 456-7890',location:'Boston, MA',linkedin:'linkedin.com/in/emilynakamura',website:'emilynakamura.io',photoUrl:''},summary:'PhD Data Scientist with 5 years applying machine learning to complex business problems. Published researcher in NLP and computer vision. Built models generating $20M+ in business value.',experience:[{company:'AI Dynamics',position:'Senior Data Scientist',location:'Boston, MA',startDate:'Jun 2021',endDate:'Present',achievements:['Developed fraud detection model reducing false positives by 45% while maintaining 99.2% accuracy','Built NLP pipeline processing 1M+ customer reviews for sentiment analysis','Led team of 3 data scientists on recommendation system improving engagement 30%']},{company:'Research Institute',position:'Data Scientist',location:'Cambridge, MA',startDate:'Sep 2019',endDate:'May 2021',achievements:['Published 4 peer-reviewed papers on deep learning applications','Collaborated with healthcare partners on predictive models for patient outcomes']}],education:[{institution:'Harvard University',degree:'PhD',field:'Computer Science',graduationDate:'2019'},{institution:'UC Berkeley',degree:'Bachelor of Science',field:'Statistics',graduationDate:'2014'}],skills:['Python','TensorFlow','PyTorch','SQL','R','Spark','NLP','Computer Vision','Statistical Modeling'],certifications:[{name:'Deep Learning Specialization',issuer:'Coursera/DeepLearning.AI',date:'2020'}]},'finance-analyst':{personalInfo:{fullName:'James Morrison',title:'Senior Financial Analyst',email:'james.morrison@email.com',phone:'+1 (555) 567-8901',location:'New York, NY',linkedin:'linkedin.com/in/jamesmorrison',website:'',photoUrl:''},summary:'CFA Charterholder with 7 years in investment banking and corporate finance. Expert in financial modeling, M&A analysis, and strategic planning. Advised on $2B+ in transactions.',experience:[{company:'Goldman Sachs',position:'Senior Financial Analyst',location:'New York, NY',startDate:'Apr 2021',endDate:'Present',achievements:['Led financial due diligence for 12 M&A transactions totaling $800M','Built complex financial models for DCF, LBO, and merger analysis','Presented investment recommendations to C-suite executives and board members']},{company:'JP Morgan',position:'Financial Analyst',location:'New York, NY',startDate:'Jul 2018',endDate:'Mar 2021',achievements:['Conducted sector research covering 25+ companies in technology and healthcare','Developed automated reporting system reducing analysis time by 40%']}],education:[{institution:'Wharton School of Business',degree:'MBA',field:'Finance',graduationDate:'2018'},{institution:'NYU Stern',degree:'Bachelor of Science',field:'Finance & Economics',graduationDate:'2014',gpa:'3.85'}],skills:['Financial Modeling','Valuation','M&A','Excel','Bloomberg Terminal','Capital IQ','SQL','Python'],certifications:[{name:'CFA Charterholder',issuer:'CFA Institute',date:'2020'},{name:'Financial Modeling Certification',issuer:'Wall Street Prep',date:'2018'}]},'project-manager':{personalInfo:{fullName:'Rachel Thompson',title:'Senior Project Manager',email:'rachel.thompson@email.com',phone:'+1 (555) 678-9012',location:'Denver, CO',linkedin:'linkedin.com/in/rachelthompson',website:'',photoUrl:''},summary:'PMP-certified Project Manager with 8 years delivering complex IT and infrastructure projects on time and under budget. Managed portfolios worth $50M+ with teams of up to 40 members.',experience:[{company:'Enterprise Solutions Corp',position:'Senior Project Manager',location:'Denver, CO',startDate:'Jan 2020',endDate:'Present',achievements:['Delivered $25M ERP implementation across 12 global offices on schedule','Reduced project overhead costs by 20% through process optimization','Managed PMO of 8 project managers overseeing 30+ concurrent projects']},{company:'Tech Consulting Group',position:'Project Manager',location:'Phoenix, AZ',startDate:'Mar 2017',endDate:'Dec 2019',achievements:['Led agile transformation for Fortune 500 client reducing time-to-market by 35%','Maintained 95% stakeholder satisfaction rating across 15 projects']}],education:[{institution:'Arizona State University',degree:'Master of Science',field:'Project Management',graduationDate:'2017'}],skills:['PMP','Agile/Scrum','Risk Management','MS Project','Jira','Stakeholder Management','Budgeting','Resource Planning'],certifications:[{name:'Project Management Professional (PMP)',issuer:'PMI',date:'2018'},{name:'Certified ScrumMaster (CSM)',issuer:'Scrum Alliance',date:'2019'}]}};
+
+const TS={obsidian:{bg:'#0f0e0d',text:'#f7f3ec',accent:'#c9933a',muted:'rgba(247,243,236,0.6)',border:'rgba(201,147,58,0.3)',headLeft:false,skillBg:'rgba(201,147,58,0.15)',skillText:'#e8b86d',photoRadius:'50%',photoBorder:'2px solid #c9933a'},polar:{bg:'#f7f3ec',text:'#0d0c0b',accent:'#0d0c0b',muted:'rgba(13,12,11,0.6)',border:'rgba(13,12,11,0.15)',headLeft:false,skillBg:'rgba(13,12,11,0.08)',skillText:'#0d0c0b',photoRadius:'50%',photoBorder:'2px solid #0d0c0b'},circuit:{bg:'#0a0f1a',text:'#f7f3ec',accent:'#6b9cf0',muted:'rgba(247,243,236,0.6)',border:'rgba(107,156,240,0.25)',headLeft:true,skillBg:'rgba(107,156,240,0.15)',skillText:'#6b9cf0',photoRadius:'8px',photoBorder:'2px solid #6b9cf0'},ember:{bg:'#1a0f0a',text:'#f7f3ec',accent:'#f06b63',muted:'rgba(247,243,236,0.6)',border:'rgba(240,107,99,0.25)',headLeft:true,skillBg:'rgba(240,107,99,0.15)',skillText:'#f06b63',photoRadius:'12px',photoBorder:'2px solid #f06b63'},summit:{bg:'#0d0c0b',text:'#f7f3ec',accent:'#c9933a',muted:'rgba(247,243,236,0.6)',border:'rgba(201,147,58,0.3)',headLeft:true,skillBg:'rgba(201,147,58,0.15)',skillText:'#e8b86d',photoRadius:'50%',photoBorder:'2px solid #c9933a'},canvas:{bg:'#0c1010',text:'#f7f3ec',accent:'#2dd4a0',muted:'rgba(247,243,236,0.6)',border:'rgba(45,212,160,0.2)',headLeft:true,skillBg:'rgba(45,212,160,0.12)',skillText:'#2dd4a0',photoRadius:'8px',photoBorder:'2px solid #2dd4a0'},slate:{bg:'#1a1a1a',text:'#f7f3ec',accent:'rgba(247,243,236,0.9)',muted:'rgba(247,243,236,0.5)',border:'rgba(247,243,236,0.15)',headLeft:false,skillBg:'rgba(247,243,236,0.08)',skillText:'rgba(247,243,236,0.8)',photoRadius:'50%',photoBorder:'1px solid rgba(247,243,236,0.3)'},nova:{bg:'linear-gradient(135deg,#1a1025,#0f0a15)',text:'#f7f3ec',accent:'#a855f7',muted:'rgba(247,243,236,0.6)',border:'rgba(168,85,247,0.25)',headLeft:true,skillBg:'rgba(168,85,247,0.15)',skillText:'#a855f7',photoRadius:'50%',photoBorder:'2px solid #a855f7'},midnight:{bg:'#0a0a0f',text:'#f7f3ec',accent:'#3b82f6',muted:'rgba(247,243,236,0.6)',border:'rgba(59,130,246,0.25)',headLeft:false,skillBg:'rgba(59,130,246,0.12)',skillText:'#3b82f6',photoRadius:'50%',photoBorder:'2px solid #3b82f6'},monarch:{bg:'linear-gradient(135deg,#1a1512,#0d0a08)',text:'#f7f3ec',accent:'#d4af37',muted:'rgba(247,243,236,0.6)',border:'#d4af37',headLeft:false,skillBg:'rgba(212,175,55,0.12)',skillText:'#d4af37',photoRadius:'4px',photoBorder:'2px solid #d4af37'},aurora:{bg:'linear-gradient(135deg,#0f172a,#1e1b4b,#0f172a)',text:'#f7f3ec',accent:'#06b6d4',muted:'rgba(247,243,236,0.6)',border:'rgba(6,182,212,0.3)',headLeft:true,skillBg:'rgba(6,182,212,0.12)',skillText:'#06b6d4',photoRadius:'8px',photoBorder:'2px solid #06b6d4'},ivory:{bg:'#faf8f5',text:'#1c1917',accent:'#92400e',muted:'rgba(28,25,23,0.6)',border:'#92400e',headLeft:false,skillBg:'rgba(146,64,14,0.1)',skillText:'#92400e',photoRadius:'50%',photoBorder:'2px solid #92400e'},zenith:{bg:'#ffffff',text:'#18181b',accent:'#18181b',muted:'#71717a',border:'#18181b',headLeft:false,skillBg:'#18181b',skillText:'white',photoRadius:'3px',photoBorder:'2px solid #18181b'},verdant:{bg:'linear-gradient(135deg,#052e16,#022c22)',text:'#f7f3ec',accent:'#22c55e',muted:'rgba(247,243,236,0.6)',border:'rgba(34,197,94,0.3)',headLeft:true,skillBg:'rgba(34,197,94,0.12)',skillText:'#22c55e',photoRadius:'50%',photoBorder:'2px solid #22c55e'},titanium:{bg:'linear-gradient(135deg,#27272a,#18181b)',text:'#fafafa',accent:'#a1a1aa',muted:'rgba(250,250,250,0.6)',border:'rgba(161,161,170,0.3)',headLeft:false,skillBg:'rgba(161,161,170,0.15)',skillText:'#a1a1aa',photoRadius:'50%',photoBorder:'2px solid #a1a1aa'},crimson:{bg:'linear-gradient(135deg,#1c1917,#0c0a09)',text:'#f7f3ec',accent:'#dc2626',muted:'rgba(247,243,236,0.6)',border:'rgba(220,38,38,0.4)',headLeft:true,skillBg:'rgba(220,38,38,0.15)',skillText:'#dc2626',photoRadius:'4px',photoBorder:'2px solid #dc2626'},sapphire:{bg:'#f8fafc',text:'#0f172a',accent:'#2563eb',muted:'rgba(15,23,42,0.6)',border:'rgba(37,99,235,0.3)',headLeft:true,skillBg:'rgba(37,99,235,0.1)',skillText:'#2563eb',photoRadius:'50%',photoBorder:'2px solid #2563eb'},onyx:{bg:'#000000',text:'white',accent:'white',muted:'rgba(255,255,255,0.6)',border:'rgba(255,255,255,0.2)',headLeft:false,skillBg:'rgba(255,255,255,0.1)',skillText:'white',photoRadius:'50%',photoBorder:'1px solid rgba(255,255,255,0.4)'},pearl:{bg:'linear-gradient(135deg,#f5f5f4,#e7e5e4)',text:'#1c1917',accent:'#78716c',muted:'rgba(28,25,23,0.6)',border:'#78716c',headLeft:false,skillBg:'rgba(120,113,108,0.15)',skillText:'#44403c',photoRadius:'50%',photoBorder:'2px solid #78716c'},azure:{bg:'linear-gradient(135deg,#0c4a6e,#082f49)',text:'white',accent:'white',muted:'rgba(255,255,255,0.7)',border:'rgba(255,255,255,0.2)',headLeft:true,skillBg:'rgba(255,255,255,0.15)',skillText:'white',photoRadius:'8px',photoBorder:'2px solid white'},amber:{bg:'#fffbeb',text:'#1c1917',accent:'#f59e0b',muted:'rgba(28,25,23,0.6)',border:'#f59e0b',headLeft:false,skillBg:'rgba(245,158,11,0.15)',skillText:'#b45309',photoRadius:'50%',photoBorder:'2px solid #f59e0b'},graphite:{bg:'#1f2937',text:'#f3f4f6',accent:'#f3f4f6',muted:'rgba(243,244,246,0.6)',border:'rgba(243,244,246,0.15)',headLeft:false,skillBg:'rgba(243,244,246,0.1)',skillText:'#f3f4f6',photoRadius:'50%',photoBorder:'1px solid rgba(243,244,246,0.3)'},rose:{bg:'linear-gradient(135deg,#1c1917,#0f0a09)',text:'#f7f3ec',accent:'#f43f5e',muted:'rgba(247,243,236,0.6)',border:'rgba(244,63,94,0.3)',headLeft:true,skillBg:'rgba(244,63,94,0.12)',skillText:'#f43f5e',photoRadius:'50%',photoBorder:'2px solid #f43f5e'}};
+
+// ─── Landing page logic ───────────────────────────────────────────────────────
+document.getElementById('year').textContent = new Date().getFullYear();
+
+function checkMobile(){
+  const m = window.innerWidth < 768;
+  document.getElementById('ham-btn').style.display = m ? 'flex' : 'none';
+  document.getElementById('desktop-nav').style.display = m ? 'none' : 'flex';
+  if(!m) closeMenu();
+}
+window.addEventListener('resize', () => { checkMobile(); edCheckMobile(); });
+window.addEventListener('orientationchange', () => { setTimeout(() => { checkMobile(); edCheckMobile(); }, 100); }); // Fix #13: handle tablet/phone rotation
+checkMobile();
+
+function toggleMenu(){
+  const open = document.getElementById('mobile-menu').classList.toggle('open');
+  document.getElementById('ham-btn').classList.toggle('ham-open', open);
+  document.getElementById('ham-btn').setAttribute('aria-expanded', open ? 'true' : 'false');
+}
+function closeMenu(){
+  document.getElementById('mobile-menu').classList.remove('open');
+  document.getElementById('ham-btn').classList.remove('ham-open');
+  document.getElementById('ham-btn').setAttribute('aria-expanded', 'false');
+}
+// ─── Supabase config ──────────────────────────────────────────────────────────
+// SECURITY: The anon key below is intentionally public (Supabase design).
+// HOWEVER — you MUST enable Row Level Security (RLS) on the `waitlist` table
+// in Supabase → Table Editor → RLS, with a policy that allows INSERT only.
+// Without RLS, anyone can read or delete your entire waitlist via the API.
+const SUPABASE_URL      = 'https://imoazfouyqewkomodhkf.supabase.co';
+const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imltb2F6Zm91eXFld2tvbW9kaGtmIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODM1MDA0OTUsImV4cCI6MjA5OTA3NjQ5NX0.RVXyY8_RI-IiN-UeXQeIFfw36vfnLHD8JTG93eLe06Y';
+
+async function submitWaitlist(id){
+  const el = document.getElementById(id+'-email');
+  if(!el) return;
+  const email = el.value.trim();
+  const emailRe = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  if(!email){ el.focus(); el.style.borderColor='#ef4444'; el.placeholder='Please enter your email'; return; }
+  if(!emailRe.test(email)){ el.style.borderColor='#ef4444'; el.title='Please enter a valid email address'; el.focus(); return; }
+  el.style.borderColor='';
+
+  // Fix #2: Find button by traversing the parent form group, not fragile sibling assumption
+  const btn = el.parentElement ? el.parentElement.querySelector('button[onclick*="submitWaitlist"]') : null;
+  const origText = btn ? btn.textContent : '';
+  if(btn){ btn.textContent = 'Joining…'; btn.disabled = true; btn.style.opacity='0.7'; }
+
+  try {
+    const res = await fetch(SUPABASE_URL + '/rest/v1/waitlist', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'apikey': SUPABASE_ANON_KEY,
+        'Authorization': 'Bearer ' + SUPABASE_ANON_KEY,
+        'Prefer': 'return=minimal'
+      },
+      body: JSON.stringify({
+        email: email,
+        signed_up_at: new Date().toISOString(),
+        source: id   // 'hero' or 'cta' — tells you where on the page they signed up
+      })
+    });
+
+    if(res.ok || res.status === 201){
+      document.getElementById('waitlist-'+id).style.display='none';
+      document.getElementById('waitlist-'+id+'-success').style.display='block';
+    } else {
+      const err = await res.json().catch(()=>({}));
+      // Handle duplicate email gracefully — still show success
+      if(res.status === 409 || (err.code && err.code === '23505')){
+        document.getElementById('waitlist-'+id).style.display='none';
+        document.getElementById('waitlist-'+id+'-success').style.display='block';
+        return;
+      }
+      throw new Error(err.message || 'Submission failed: ' + res.status);
+    }
+  } catch(err){
+    console.error('Waitlist error:', err);
+    if(btn){ btn.textContent = origText || 'Try again'; btn.disabled = false; btn.style.opacity='1'; }
+    el.style.borderColor='#ef4444';
+  }
+}
+
+// ─── Template grid ────────────────────────────────────────────────────────────
+const templates=[
+  {id:'monarch',name:'Monarch',cat:'executive',ats:99,badge:'Most Popular',bc:'rgba(212,175,55,0.2)',btc:'#d4af37',bbc:'rgba(212,175,55,0.4)',tags:['Executive','C-Suite'],bg:'linear-gradient(135deg,#1a1512,#0d0a08)',accent:'#d4af37'},
+  {id:'zenith',name:'Zenith',cat:'minimal',ats:100,badge:'Highest ATS',bc:'rgba(24,24,27,0.1)',btc:'#18181b',bbc:'rgba(24,24,27,0.3)',tags:['Any Industry','Universal'],bg:'#ffffff',accent:'#18181b'},
+  {id:'obsidian',name:'Obsidian',cat:'corporate',ats:98,badge:'Popular',bc:'rgba(201,147,58,0.15)',btc:'#e8b86d',bbc:'rgba(201,147,58,0.3)',tags:['Finance','Law'],bg:'linear-gradient(135deg,#0f0e0d,#1a1510)',accent:'#c9933a'},
+  {id:'aurora',name:'Aurora',cat:'tech',ats:97,badge:'Editor Pick',bc:'rgba(6,182,212,0.15)',btc:'#06b6d4',bbc:'rgba(6,182,212,0.3)',tags:['Data Science','AI/ML'],bg:'linear-gradient(135deg,#0f172a,#1e1b4b)',accent:'#06b6d4'},
+  {id:'polar',name:'Polar',cat:'minimal',ats:99,badge:'Clean',bc:'rgba(13,12,11,0.08)',btc:'#2a2520',bbc:'rgba(13,12,11,0.15)',tags:['Any Industry','Fresh Grad'],bg:'#f7f3ec',accent:'#0d0c0b'},
+  {id:'circuit',name:'Circuit',cat:'tech',ats:97,badge:'Tech',bc:'rgba(107,156,240,0.12)',btc:'#6b9cf0',bbc:'rgba(107,156,240,0.25)',tags:['Engineering','SWE'],bg:'linear-gradient(135deg,#0a0f1a,#0d1520)',accent:'#6b9cf0'},
+  {id:'ember',name:'Ember',cat:'creative',ats:94,badge:'Creative',bc:'rgba(240,107,99,0.12)',btc:'#f06b63',bbc:'rgba(240,107,99,0.25)',tags:['Design','Marketing'],bg:'linear-gradient(135deg,#1a0f0a,#120b08)',accent:'#f06b63'},
+  {id:'summit',name:'Summit',cat:'executive',ats:97,badge:'Premium',bc:'rgba(201,147,58,0.15)',btc:'#e8b86d',bbc:'rgba(201,147,58,0.3)',tags:['C-Suite','Director'],bg:'linear-gradient(135deg,#0d0c0b,#161310)',accent:'#c9933a'},
+  {id:'canvas',name:'Canvas',cat:'creative',ats:93,badge:'Fresh',bc:'rgba(45,212,160,0.1)',btc:'#2dd4a0',bbc:'rgba(45,212,160,0.2)',tags:['UX/UI','Art Direction'],bg:'linear-gradient(135deg,#0c1010,#0a1208)',accent:'#2dd4a0'},
+  {id:'slate',name:'Slate',cat:'minimal',ats:98,badge:'Minimal',bc:'rgba(247,243,236,0.07)',btc:'rgba(247,243,236,0.5)',bbc:'rgba(247,243,236,0.12)',tags:['Versatile','All Levels'],bg:'#1a1a1a',accent:'rgba(247,243,236,0.5)'},
+  {id:'nova',name:'Nova',cat:'tech',ats:96,badge:'Modern',bc:'rgba(168,85,247,0.12)',btc:'#a855f7',bbc:'rgba(168,85,247,0.25)',tags:['Startup','Product'],bg:'linear-gradient(135deg,#1a1025,#0f0a15)',accent:'#a855f7'},
+  {id:'midnight',name:'Midnight',cat:'corporate',ats:98,badge:'Professional',bc:'rgba(59,130,246,0.12)',btc:'#3b82f6',bbc:'rgba(59,130,246,0.25)',tags:['Banking','Investment'],bg:'#0a0a0f',accent:'#3b82f6'},
+  {id:'ivory',name:'Ivory',cat:'academic',ats:99,badge:'Academic',bc:'rgba(146,64,14,0.1)',btc:'#92400e',bbc:'rgba(146,64,14,0.25)',tags:['Research','Professor'],bg:'#faf8f5',accent:'#92400e'},
+  {id:'verdant',name:'Verdant',cat:'healthcare',ats:97,badge:'Healthcare',bc:'rgba(34,197,94,0.1)',btc:'#22c55e',bbc:'rgba(34,197,94,0.25)',tags:['Medical','Nursing'],bg:'linear-gradient(135deg,#052e16,#022c22)',accent:'#22c55e'},
+  {id:'titanium',name:'Titanium',cat:'corporate',ats:98,badge:'Refined',bc:'rgba(161,161,170,0.12)',btc:'#a1a1aa',bbc:'rgba(161,161,170,0.25)',tags:['Operations','Management'],bg:'linear-gradient(135deg,#27272a,#18181b)',accent:'#a1a1aa'},
+  {id:'crimson',name:'Crimson',cat:'creative',ats:95,badge:'Bold',bc:'rgba(220,38,38,0.12)',btc:'#dc2626',bbc:'rgba(220,38,38,0.25)',tags:['Media','Entertainment'],bg:'linear-gradient(135deg,#1c1917,#0c0a09)',accent:'#dc2626'},
+  {id:'sapphire',name:'Sapphire',cat:'legal',ats:99,badge:'Legal',bc:'rgba(37,99,235,0.1)',btc:'#2563eb',bbc:'rgba(37,99,235,0.25)',tags:['Attorney','Paralegal'],bg:'#f8fafc',accent:'#2563eb'},
+  {id:'onyx',name:'Onyx',cat:'executive',ats:97,badge:'Luxury',bc:'rgba(255,255,255,0.08)',btc:'rgba(255,255,255,0.7)',bbc:'rgba(255,255,255,0.2)',tags:['Luxury','Fashion'],bg:'#000000',accent:'rgba(255,255,255,0.5)'},
+  {id:'pearl',name:'Pearl',cat:'minimal',ats:99,badge:'Classic',bc:'rgba(120,113,108,0.12)',btc:'#78716c',bbc:'rgba(120,113,108,0.25)',tags:['Traditional','Admin'],bg:'linear-gradient(135deg,#f5f5f4,#e7e5e4)',accent:'#78716c'},
+  {id:'azure',name:'Azure',cat:'tech',ats:96,badge:'Cloud',bc:'rgba(255,255,255,0.15)',btc:'white',bbc:'rgba(255,255,255,0.3)',tags:['DevOps','Cloud'],bg:'linear-gradient(135deg,#0c4a6e,#082f49)',accent:'white'},
+  {id:'amber',name:'Amber',cat:'creative',ats:95,badge:'Warm',bc:'rgba(245,158,11,0.15)',btc:'#f59e0b',bbc:'rgba(245,158,11,0.3)',tags:['Education','Training'],bg:'#fffbeb',accent:'#f59e0b'},
+  {id:'graphite',name:'Graphite',cat:'corporate',ats:98,badge:'Two-Column',bc:'rgba(243,244,246,0.1)',btc:'#f3f4f6',bbc:'rgba(243,244,246,0.2)',tags:['Sales','Business Dev'],bg:'#1f2937',accent:'#f3f4f6'},
+  {id:'rose',name:'Rose',cat:'creative',ats:94,badge:'Elegant',bc:'rgba(244,63,94,0.12)',btc:'#f43f5e',bbc:'rgba(244,63,94,0.25)',tags:['Beauty','Wellness'],bg:'linear-gradient(135deg,#1c1917,#0f0a09)',accent:'#f43f5e'}
+];
+const filterList=[{label:'All Templates',val:'all'},{label:'Corporate',val:'corporate'},{label:'Creative',val:'creative'},{label:'Tech',val:'tech'},{label:'Minimal',val:'minimal'},{label:'Executive',val:'executive'},{label:'Academic',val:'academic'},{label:'Healthcare',val:'healthcare'},{label:'Legal',val:'legal'}];
+let activeFilter='all';
+
+function buildFilters(){
+  document.getElementById('filters').innerHTML=filterList.map(f=>`<button class="filter-btn${f.val===activeFilter?' active':''}" onclick="setFilter('${f.val}',this)" style="font-size:.75rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;padding:8px 16px;border-radius:999px;border:1px solid rgba(247,243,236,0.1);color:rgba(247,243,236,0.45);background:none;cursor:pointer;transition:all .2s;">${f.label}</button>`).join('');
+}
+function setFilter(val,btn){
+  activeFilter=val;
+  document.querySelectorAll('.filter-btn').forEach(b=>b.classList.remove('active'));
+  btn.classList.add('active');
+  renderTemplates();
+}
+function miniPreview(t){
+  const L=['polar','ivory','pearl','sapphire','amber','zenith'].includes(t.id);
+  const tc=L?'rgba(13,12,11,0.8)':'rgba(247,243,236,0.8)';
+  const bc=L?'rgba(13,12,11,0.1)':'rgba(247,243,236,0.12)';
+  return `<div style="width:100%;height:100%;padding:12px;background:${t.bg};display:flex;flex-direction:column;gap:5px;"><div style="display:flex;align-items:center;gap:6px;margin-bottom:6px;"><div style="width:22px;height:22px;border-radius:50%;background:${t.accent};display:flex;align-items:center;justify-content:center;font-size:5px;font-weight:700;color:${L?'#fff':'#0d0c0b'};opacity:.9;flex-shrink:0;">AB</div><div style="flex:1;"><div style="height:5px;width:52px;background:${tc};border-radius:2px;margin-bottom:2px;"></div><div style="height:3px;width:36px;background:${t.accent};border-radius:2px;opacity:.6;"></div></div></div><div style="height:1px;background:${t.accent};opacity:.35;"></div><div style="height:2px;width:100%;background:${bc};border-radius:1px;"></div><div style="height:2px;width:80%;background:${bc};border-radius:1px;opacity:.7;"></div><div style="height:3px;width:32px;background:${t.accent};border-radius:1px;opacity:.5;margin-top:3px;"></div><div style="height:2px;width:88%;background:${bc};border-radius:1px;"></div><div style="height:2px;width:70%;background:${bc};border-radius:1px;opacity:.7;"></div><div style="margin-top:auto;display:flex;gap:3px;"><div style="height:5px;width:22px;background:${t.accent};border-radius:1px;opacity:.18;border:1px solid ${t.accent};"></div><div style="height:5px;width:28px;background:${t.accent};border-radius:1px;opacity:.18;border:1px solid ${t.accent};"></div></div></div>`;
+}
+function renderTemplates(){
+  const list=activeFilter==='all'?templates:templates.filter(t=>t.cat===activeFilter);
+  document.getElementById('template-grid').innerHTML=list.map(t=>`
+    <div class="template-card" tabindex="0" role="button" aria-label="Use ${t.name} template" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openEditor('${t.id}')}" style="position:relative;border-radius:12px;overflow:hidden;border:1px solid rgba(247,243,236,0.08);background:rgba(247,243,236,0.02);cursor:pointer;">
+      <div style="position:relative;aspect-ratio:3/4;overflow:hidden;">
+        ${miniPreview(t)}
+        ${t.badge?`<div style="position:absolute;top:8px;right:8px;font-size:.5rem;font-weight:700;letter-spacing:.05em;text-transform:uppercase;padding:2px 7px;border-radius:999px;background:${t.bc};color:${t.btc};border:1px solid ${t.bbc};">${t.badge}</div>`:''}
+        <div class="template-overlay" onclick="openEditor('${t.id}')">
+          <span style="background:#c9933a;color:#0d0c0b;padding:8px 16px;border-radius:6px;font-size:.7rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;">Use Template</span>
+        </div>
+      </div>
+      <div style="padding:10px;">
+        <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:4px;">
+          <span style="font-family:'Playfair Display',Georgia,serif;font-size:.8rem;font-weight:600;color:#f7f3ec;">${t.name}</span>
+          <span style="font-size:.55rem;color:rgba(247,243,236,0.4);">ATS ${t.ats}</span>
+        </div>
+        <div style="display:flex;gap:3px;flex-wrap:wrap;">
+          ${t.tags.slice(0,2).map(tag=>`<span style="font-size:.5rem;font-weight:500;letter-spacing:.05em;text-transform:uppercase;padding:2px 5px;border-radius:2px;border:1px solid rgba(201,147,58,0.15);color:rgba(247,243,236,0.35);">${tag}</span>`).join('')}
+        </div>
+      </div>
+    </div>`).join('');
+}
+buildFilters();
+renderTemplates();
+
+// ─── View switching ───────────────────────────────────────────────────────────
+function openEditor(templateId){
+  document.getElementById('landing-view').style.display='none';
+  document.getElementById('editor-view').style.display='block';
+  window.scrollTo(0,0);
+  edInit(templateId);
+}
+function goHome(){
+  document.getElementById('editor-view').style.display='none';
+  document.getElementById('landing-view').style.display='block';
+  window.scrollTo(0,0);
+  setTimeout(()=>{ const el=document.getElementById('templates'); if(el) el.scrollIntoView({behavior:'smooth'}); },100);
+}
+
+// ─── Editor state ─────────────────────────────────────────────────────────────
+let edTemplateId='obsidian', edPhotoUrl='', edExpItems=[], edEduItems=[], edCertItems=[];
+
+function edInit(id){
+  edTemplateId = id;
+  edPhotoUrl='';
+  document.getElementById('ed-template-name').textContent = TEMPLATE_NAMES[id]||id;
+
+  // Reset photo UI
+  document.getElementById('ed-photo-add').style.display='flex';
+  document.getElementById('ed-photo-display').style.display='none';
+  document.getElementById('ed-photo-status').textContent='Add a professional photo';
+  document.getElementById('ed-photo-upload-btn').style.display='flex';
+  document.getElementById('ed-photo-input').value='';
+
+  // Load sample
+  const skey = SAMPLE_KEYS[id]||'product-manager';
+  const d = SAMPLES[skey]||SAMPLES['product-manager'];
+  document.getElementById('ed-name').value=d.personalInfo.fullName;
+  document.getElementById('ed-title').value=d.personalInfo.title;
+  document.getElementById('ed-email').value=d.personalInfo.email;
+  document.getElementById('ed-phone').value=d.personalInfo.phone;
+  document.getElementById('ed-location').value=d.personalInfo.location;
+  document.getElementById('ed-linkedin').value=d.personalInfo.linkedin||'';
+  document.getElementById('ed-website').value=d.personalInfo.website||'';
+  document.getElementById('ed-summary').value=d.summary;
+  document.getElementById('ed-skills').value=d.skills.join(', ');
+  edExpItems=d.experience.map(e=>({...e,achievements:[...e.achievements]}));
+  edEduItems=d.education.map(e=>({...e}));
+  edCertItems=(d.certifications||[]).map(c=>({...c}));
+  edRenderExp(); edRenderEdu(); edRenderCert();
+  edUpdatePreview();
+  edCheckMobile();
+}
+
+function edCheckMobile(){
+  const m = window.innerWidth < 1024;
+  const tabs = document.getElementById('ed-mobile-tabs');
+  tabs.style.display = m ? 'flex' : 'none';
+  document.getElementById('ed-main').style.gridTemplateColumns = m ? '1fr' : '1fr 1fr';
+
+  // Fix #4: Prefer 100dvh for iOS Safari dynamic viewport, fall back to 100vh
+  const unit = CSS.supports('height','100dvh') ? 'dvh' : 'vh';
+  const panelH = m ? `calc(100${unit} - 110px)` : `calc(100${unit} - 65px)`;
+  document.getElementById('ed-editor-panel').style.maxHeight = panelH;
+  document.getElementById('ed-preview-panel').style.maxHeight = panelH;
+
+  if(!m){
+    document.getElementById('ed-editor-panel').style.display = 'block';
+    document.getElementById('ed-preview-panel').style.display = 'block';
+  }
+}
+let edCurTab='edit';
+function edSwitchTab(tab){
+  edCurTab=tab;
+  document.getElementById('etab-edit').classList.toggle('active',tab==='edit');
+  document.getElementById('etab-preview').classList.toggle('active',tab==='preview');
+  if(window.innerWidth<1024){
+    document.getElementById('ed-editor-panel').style.display=tab==='edit'?'block':'none';
+    document.getElementById('ed-preview-panel').style.display=tab==='preview'?'block':'none';
+  }
+}
+
+// Photo
+function edHandlePhoto(e){
+  const f=e.target.files[0]; if(!f) return;
+  const r=new FileReader();
+  r.onloadend=()=>{ edPhotoUrl=r.result; document.getElementById('ed-photo-img').src=edPhotoUrl; document.getElementById('ed-photo-add').style.display='none'; document.getElementById('ed-photo-display').style.display='block'; document.getElementById('ed-photo-status').textContent='Photo uploaded'; document.getElementById('ed-photo-upload-btn').style.display='none'; edUpdatePreview(); };
+  r.readAsDataURL(f);
+}
+function edRemovePhoto(){
+  edPhotoUrl=''; document.getElementById('ed-photo-img').src=''; document.getElementById('ed-photo-display').style.display='none'; document.getElementById('ed-photo-add').style.display='flex'; document.getElementById('ed-photo-status').textContent='Add a professional photo'; document.getElementById('ed-photo-upload-btn').style.display='flex'; document.getElementById('ed-photo-input').value=''; edUpdatePreview();
+}
+
+// Helpers
+function esc(s){return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');}
+function tx(s){return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');}
+const trashSVG=`<svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"/></svg>`;
+
+// Experience
+function edAddExp(){edExpItems.push({company:'Company Name',position:'Position',location:'',startDate:'Jan 2024',endDate:'',achievements:['Achievement 1']});edRenderExp();edUpdatePreview();}
+function edRemoveExp(i){edExpItems.splice(i,1);edRenderExp();edUpdatePreview();}
+function edRenderExp(){
+  document.getElementById('ed-exp-list').innerHTML=edExpItems.map((e,i)=>`
+    <div class="exp-block">
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;"><span style="font-size:.75rem;color:rgba(247,243,236,0.4);">Experience ${i+1}</span><button class="remove-btn" onclick="edRemoveExp(${i})">${trashSVG}</button></div>
+      <div style="display:grid;gap:8px;">
+        <input class="ed-input" value="${esc(e.position)}" placeholder="Position" oninput="edExpItems[${i}].position=this.value;edUpdatePreview()"/>
+        <input class="ed-input" value="${esc(e.company)}" placeholder="Company" oninput="edExpItems[${i}].company=this.value;edUpdatePreview()"/>
+        <div class="ed-grid-2" style="display:grid;grid-template-columns:1fr 1fr;gap:8px;">
+          <input class="ed-input" value="${esc(e.startDate)}" placeholder="Start Date" oninput="edExpItems[${i}].startDate=this.value;edUpdatePreview()"/>
+          <input class="ed-input" value="${esc(e.endDate||'')}" placeholder="End Date" oninput="edExpItems[${i}].endDate=this.value;edUpdatePreview()"/>
+        </div>
+        <textarea class="ed-textarea" rows="3" placeholder="Achievements (one per line)" oninput="edExpItems[${i}].achievements=this.value.split('\\n').filter(Boolean);edUpdatePreview()">${esc(e.achievements.join('\n'))}</textarea>
+      </div>
+    </div>`).join('');
+}
+
+// Education
+function edAddEdu(){edEduItems.push({institution:'University Name',degree:'Degree',field:'',graduationDate:'2024',gpa:''});edRenderEdu();edUpdatePreview();}
+function edRemoveEdu(i){edEduItems.splice(i,1);edRenderEdu();edUpdatePreview();}
+function edRenderEdu(){
+  document.getElementById('ed-edu-list').innerHTML=edEduItems.map((e,i)=>`
+    <div class="exp-block">
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;"><span style="font-size:.75rem;color:rgba(247,243,236,0.4);">Education ${i+1}</span><button class="remove-btn" onclick="edRemoveEdu(${i})">${trashSVG}</button></div>
+      <div style="display:grid;gap:8px;">
+        <input class="ed-input" value="${esc(e.degree)}" placeholder="Degree" oninput="edEduItems[${i}].degree=this.value;edUpdatePreview()"/>
+        <input class="ed-input" value="${esc(e.field||'')}" placeholder="Field of Study" oninput="edEduItems[${i}].field=this.value;edUpdatePreview()"/>
+        <input class="ed-input" value="${esc(e.institution)}" placeholder="Institution" oninput="edEduItems[${i}].institution=this.value;edUpdatePreview()"/>
+        <div class="ed-grid-2" style="display:grid;grid-template-columns:1fr 1fr;gap:8px;">
+          <input class="ed-input" value="${esc(e.graduationDate)}" placeholder="Graduation Date" oninput="edEduItems[${i}].graduationDate=this.value;edUpdatePreview()"/>
+          <input class="ed-input" value="${esc(e.gpa||'')}" placeholder="GPA (optional)" oninput="edEduItems[${i}].gpa=this.value;edUpdatePreview()"/>
+        </div>
+      </div>
+    </div>`).join('');
+}
+
+// Certifications
+function edAddCert(){edCertItems.push({name:'Certification Name',issuer:'',date:''});edRenderCert();edUpdatePreview();}
+function edRemoveCert(i){edCertItems.splice(i,1);edRenderCert();edUpdatePreview();}
+function edRenderCert(){
+  document.getElementById('ed-cert-list').innerHTML=edCertItems.map((c,i)=>`
+    <div class="exp-block">
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;"><span style="font-size:.75rem;color:rgba(247,243,236,0.4);">Certification ${i+1}</span><button class="remove-btn" onclick="edRemoveCert(${i})">${trashSVG}</button></div>
+      <div style="display:grid;gap:8px;">
+        <input class="ed-input" value="${esc(c.name)}" placeholder="Certification Name" oninput="edCertItems[${i}].name=this.value;edUpdatePreview()"/>
+        <div class="ed-grid-2" style="display:grid;grid-template-columns:1fr 1fr;gap:8px;">
+          <input class="ed-input" value="${esc(c.issuer||'')}" placeholder="Issuer" oninput="edCertItems[${i}].issuer=this.value;edUpdatePreview()"/>
+          <input class="ed-input" value="${esc(c.date||'')}" placeholder="Date" oninput="edCertItems[${i}].date=this.value;edUpdatePreview()"/>
+        </div>
+      </div>
+    </div>`).join('');
+}
+
+// ─── Live preview renderer ────────────────────────────────────────────────────
+function edUpdatePreview(){
+  const s=TS[edTemplateId]||TS.obsidian;
+  const name=document.getElementById('ed-name').value;
+  const title=document.getElementById('ed-title').value;
+  const email=document.getElementById('ed-email').value;
+  const phone=document.getElementById('ed-phone').value;
+  const loc=document.getElementById('ed-location').value;
+  const linkedin=document.getElementById('ed-linkedin').value;
+  const website=document.getElementById('ed-website').value;
+  const summary=document.getElementById('ed-summary').value;
+  const skills=document.getElementById('ed-skills').value.split(',').map(x=>x.trim()).filter(Boolean);
+  const hs=s.headLeft?`border-left:3px solid ${s.accent};padding-left:12px;`:`border-bottom:1px solid ${s.border};padding-bottom:4px;`;
+
+  let h=`<div style="background:${s.bg};color:${s.text};position:relative;font-family:'DM Sans',sans-serif;">
+    <div style="position:absolute;bottom:16px;right:16px;font-size:.65rem;letter-spacing:.08em;opacity:.3;color:${s.muted};">Powered by <span style="font-family:'Playfair Display',Georgia,serif;font-weight:600;">Draft<span style="color:${s.accent};">ora</span></span></div>
+    <div style="padding:48px;">`;
+
+  // Header
+  h+=`<div style="border-bottom:1px solid ${s.border};padding-bottom:24px;margin-bottom:24px;"><div style="display:flex;align-items:flex-start;gap:16px;">`;
+  if(edPhotoUrl) h+=`<img src="${edPhotoUrl}" alt="" style="width:80px;height:80px;border-radius:${s.photoRadius};object-fit:cover;border:${s.photoBorder};flex-shrink:0;"/>`;
+  h+=`<div style="flex:1;"><h1 style="font-size:2rem;font-weight:700;letter-spacing:-.02em;color:${s.text};margin:0 0 4px;">${tx(name)}</h1><p style="font-size:1.1rem;font-weight:500;color:${s.accent};margin:0 0 12px;">${tx(title)}</p><div style="display:flex;flex-wrap:wrap;gap:8px 16px;font-size:.8rem;color:${s.muted};">${email?`<span>${tx(email)}</span>`:''}${phone?`<span>${tx(phone)}</span>`:''}${loc?`<span>${tx(loc)}</span>`:''}${linkedin?`<span>${tx(linkedin)}</span>`:''}${website?`<span>${tx(website)}</span>`:''}</div></div></div></div>`;
+
+  if(summary) h+=`<div style="margin-bottom:24px;"><h2 style="font-size:.75rem;font-weight:700;text-transform:uppercase;letter-spacing:.12em;color:${s.accent};margin-bottom:8px;${hs}">Professional Summary</h2><p style="font-size:.875rem;line-height:1.6;color:${s.text};">${tx(summary)}</p></div>`;
+
+  if(edExpItems.length){
+    h+=`<div style="margin-bottom:24px;"><h2 style="font-size:.75rem;font-weight:700;text-transform:uppercase;letter-spacing:.12em;color:${s.accent};margin-bottom:12px;${hs}">Professional Experience</h2>`;
+    edExpItems.forEach(e=>{h+=`<div style="margin-bottom:16px;"><div style="display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:4px;"><h3 style="font-size:.95rem;font-weight:600;color:${s.text};margin:0;">${tx(e.position)}</h3><span style="font-size:.8rem;color:${s.muted};white-space:nowrap;">${tx(e.startDate)} — ${tx(e.endDate||'Present')}</span></div><p style="font-size:.8rem;font-weight:500;color:${s.muted};margin:2px 0 8px;">${tx(e.company)}${e.location?` • ${tx(e.location)}`:''}</p><ul style="margin:0;padding:0;list-style:none;">${e.achievements.map(a=>`<li style="font-size:.875rem;line-height:1.6;color:${s.text};padding-left:16px;position:relative;margin-bottom:4px;"><span style="position:absolute;left:0;color:${s.accent};">•</span>${tx(a)}</li>`).join('')}</ul></div>`;});
+    h+=`</div>`;
+  }
+  if(edEduItems.length){
+    h+=`<div style="margin-bottom:24px;"><h2 style="font-size:.75rem;font-weight:700;text-transform:uppercase;letter-spacing:.12em;color:${s.accent};margin-bottom:12px;${hs}">Education</h2>`;
+    edEduItems.forEach(e=>{h+=`<div style="margin-bottom:12px;"><div style="display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:4px;"><h3 style="font-size:.95rem;font-weight:600;color:${s.text};margin:0;">${tx(e.degree)}${e.field?` in ${tx(e.field)}`:''}</h3><span style="font-size:.8rem;color:${s.muted};">${tx(e.graduationDate)}</span></div><p style="font-size:.8rem;color:${s.muted};margin:2px 0;">${tx(e.institution)}</p>${e.gpa?`<p style="font-size:.8rem;color:${s.muted};margin:2px 0;">GPA: ${tx(e.gpa)}</p>`:''}</div>`;});
+    h+=`</div>`;
+  }
+  if(skills.length) h+=`<div style="margin-bottom:24px;"><h2 style="font-size:.75rem;font-weight:700;text-transform:uppercase;letter-spacing:.12em;color:${s.accent};margin-bottom:8px;${hs}">Skills</h2><div style="display:flex;flex-wrap:wrap;gap:8px;">${skills.map(sk=>`<span style="font-size:.8rem;padding:4px 12px;border-radius:3px;background:${s.skillBg};color:${s.skillText};">${tx(sk)}</span>`).join('')}</div></div>`;
+  if(edCertItems.length) h+=`<div style="margin-bottom:24px;"><h2 style="font-size:.75rem;font-weight:700;text-transform:uppercase;letter-spacing:.12em;color:${s.accent};margin-bottom:8px;${hs}">Certifications</h2><ul style="margin:0;padding:0;list-style:none;">${edCertItems.map(c=>`<li style="font-size:.875rem;color:${s.text};margin-bottom:4px;"><span style="font-weight:500;">${tx(c.name)}</span>${c.issuer?`<span style="color:${s.muted};"> — ${tx(c.issuer)}</span>`:''}${c.date?`<span style="color:${s.muted};"> (${tx(c.date)})</span>`:''}</li>`).join('')}</ul></div>`;
+
+  h+=`</div></div>`;
+  document.getElementById('ed-resume-preview').innerHTML=h;
+}
+
+// ─── PDF Download ─────────────────────────────────────────────────────────────
+// Fix #3: Map gradient template backgrounds to flat fallback colors for html2canvas
+const GRADIENT_FALLBACKS = {
+  nova:'#1a1025', monarch:'#1a1512', aurora:'#0f172a', verdant:'#052e16',
+  titanium:'#27272a', crimson:'#1c1917', azure:'#0c4a6e', pearl:'#f0eeec',
+  graphite:'#1f2937', rose:'#1c1917', slate:'#1a1a1a', amber:'#fffbeb'
+};
+
+function downloadPDF(){
+  const btn = document.getElementById('ed-download-btn');
+  const preview = document.getElementById('ed-resume-preview');
+  const name = document.getElementById('ed-name').value.trim() || 'resume';
+  const filename = name.toLowerCase().replace(/\s+/g,'-') + '-draftora.pdf';
+
+  const downloadIcon = '<svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>';
+  const spinIcon = '<svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"/></svg>';
+
+  btn.innerHTML = spinIcon + '<span>Generating…</span>';
+  btn.disabled = true;
+  btn.style.opacity = '0.7';
+
+  // Fix #3: Temporarily patch gradient backgrounds to flat colors for html2canvas
+  const s = TS[edTemplateId] || TS.obsidian;
+  const fallbackBg = GRADIENT_FALLBACKS[edTemplateId];
+  const previewEl = preview.firstElementChild;
+  const origBg = previewEl ? previewEl.style.background : null;
+  if(fallbackBg && previewEl) previewEl.style.background = fallbackBg;
+
+  const opt = {
+    margin:       0,
+    filename:     filename,
+    image:        { type: 'jpeg', quality: 0.98 },
+    html2canvas:  { scale: 2, useCORS: true, logging: false, letterRendering: true },
+    jsPDF:        { unit: 'in', format: 'letter', orientation: 'portrait' }
+  };
+
+  html2pdf().set(opt).from(preview).save().then(() => {
+    if(fallbackBg && previewEl && origBg !== null) previewEl.style.background = origBg;
+    btn.innerHTML = downloadIcon + '<span>Download PDF</span>';
+    btn.disabled = false;
+    btn.style.opacity = '1';
+  }).catch((err) => {
+    // Fix #14: Show a real error state instead of silently using the success icon
+    if(fallbackBg && previewEl && origBg !== null) previewEl.style.background = origBg;
+    console.error('PDF export failed:', err);
+    btn.innerHTML = '<svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg><span>Retry Download</span>';
+    btn.style.background = '#ef4444';
+    btn.disabled = false;
+    btn.style.opacity = '1';
+    // Reset button color after 3s
+    setTimeout(()=>{ btn.style.background='#c9933a'; btn.innerHTML = downloadIcon + '<span>Download PDF</span>'; }, 3000);
+  });
+}
+</script>
+</body>
+</html>
